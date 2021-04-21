@@ -1,24 +1,14 @@
-# README
+## Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###Local
 
-Things you may want to cover:
+- Clone this repo
+- Until wcmc-components is on npm - Clone and build lib https://github.com/unepwcmc/wcmc-components
+- cd into treadehub-navigator repo
+- Check versions of Ruby and node
+- `bundle install`
+- `yarn install`
+- `rails s`
+- `./bin/webpack-dev-server`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You should get a homepage with a table on it that has dummy data but doesn't really work because there is no backend there yet
