@@ -11,11 +11,9 @@ import Vue from 'vue/dist/vue.esm'
 
 import store from '../store.js';
 
-import DummyButton from 'wcmc-components'
 import FilterableTable from 'wcmc-components'
 
 // Vue.use(TurbolinksAdapter)
-Vue.use(DummyButton, { store })
 Vue.use(FilterableTable, { store })
 
 // document.addEventListener('turbolinks:load', () => {
