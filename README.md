@@ -11,5 +11,3 @@
 - `rails import:tools` //not currently working
 - `rails s`
 - `./bin/webpack-dev-server`
-
-You should get a homepage with a table on it that has dummy data but doesn't really work because there is no backend there yet

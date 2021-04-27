@@ -1,4 +1,4 @@
-
+require 'csv'
 require 'wcmc_components'
 
 class Tool < ApplicationRecord
@@ -53,7 +53,7 @@ class Tool < ApplicationRecord
       committed: committed_year,
       duration: duration,
       status: status,
-      url: Rails.application.routes.url_helpers.commitment_path(id),
+      url: Rails.application.routes.url_helpers.tool_path(id),
       link: link
     }
   end
@@ -61,19 +61,19 @@ class Tool < ApplicationRecord
   def self.generate_query(page, filter_params)
     # if params are empty then return the paginated results without filtering
     if filter_params.empty?
-      return Commitment.includes(:country)
-                       .order(id: :asc).paginate(page: page || 1, per_page: @items_per_page)
-                       .to_a.map! do |commitment|
-               commitment.to_hash
-             end
+      return Tool.includes(:country)
+              .order(id: :asc).paginate(page: page || 1, per_page: @items_per_page)
+              .to_a.map! do |tool|
+                tool.to_hash
+              end
     end
 
     # we have to do some hard work on the filtering...
     filters = filter_params.select { |hash| hash['options'].present? }
     where_params = parse_filters(filters)
 
-    run_query(page, where_params).to_a.map! do |commitment|
-      commitment.to_hash
+    run_query(page, where_params).to_a.map! do |tool|
+      tool.to_hash
     end
   end
 
@@ -85,14 +85,14 @@ class Tool < ApplicationRecord
     filters.each do |filter|
       options = filter['options']
       name = filter['name']
-      if name == 'country'
-        countries = options
-        country_ids << Country.where(name: countries).pluck(:id)
-        params['country'] = country_ids.flatten.empty? ? "" : "commitments.country_id IN (#{country_ids.join(',')})"
-      else
+      # if name == 'country'
+      #   countries = options
+      #   country_ids << Country.where(name: countries).pluck(:id)
+      #   params['country'] = country_ids.flatten.empty? ? "" : "commitments.country_id IN (#{country_ids.join(',')})"
+      # else
         # Single quoted strings needed for the SQL queries to work properly
         params[name] = options.empty? ? "" : "commitments.#{name} IN (#{options.map { |op| "'#{op}'" }.join(',')})"
-      end
+      # end
     end
 
     params.compact
@@ -106,10 +106,10 @@ class Tool < ApplicationRecord
   end
 
   def self.sanitise_filters
-    [Country].each do |model|
-      var_name = "@#{model.to_s.underscore.pluralize}"
-      instance_variable_set(var_name, model.pluck(:name).compact.sort - ['Data not available'])
-    end
+    # [Country].each do |model|
+    #   var_name = "@#{model.to_s.underscore.pluralize}"
+    #   instance_variable_set(var_name, model.pluck(:name).compact.sort - ['Data not available'])
+    # end
   end
 
   def self.structure_data(page, items)

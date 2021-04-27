@@ -8,12 +8,12 @@ class HomeController < ApplicationController
 
   def index
     @filters = Tool.filters_to_json
-    @paginated = Tool.paginate(DEFAULT_PARAMS).to_json
+    @paginated = Tool.paginate(DEFAULT_PARAMS)
     @table_attributes = Tool::TABLE_ATTRIBUTES.to_json
   end
 
   def list
-    @tools = Tool.paginate_results(params.to_json)
+    @tools = Tool.paginate(params.to_json)
     
     render json: @tools
   end

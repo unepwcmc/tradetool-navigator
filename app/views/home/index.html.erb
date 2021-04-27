@@ -4,7 +4,7 @@ Library component - Filterable Table
 <filterable-table
   :attributes="<%= @table_attributes %>"
   endpoint="/tools/list"
-  :filters="<%= @filters %>" 
-  :paginated-rows="<%= @paginatedCommitments %>
+  :filter-array="<%= @filters %>" 
+  :paginated-rows="<%= @paginated[:items].to_json %>"
   :options="<%= filterableTableOptions %>"
 ></filterable-table>
