@@ -2,5 +2,9 @@ home#index
 
 Library component - Filterable Table
 <filterable-table
+  :attributes="<%= @table_attributes %>"
+  endpoint="/tools/list"
+  :filters="<%= @filters %>" 
+  :paginated-rows="<%= @paginatedCommitments %>
   :options="<%= filterableTableOptions %>"
 ></filterable-table>

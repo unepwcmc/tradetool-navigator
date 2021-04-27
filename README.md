@@ -8,6 +8,7 @@
 - Check versions of Ruby and node
 - `bundle install`
 - `yarn install`
+- `rails import:tools` //not currently working
 - `rails s`
 - `./bin/webpack-dev-server`
 
