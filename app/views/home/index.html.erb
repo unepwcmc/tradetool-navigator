@@ -1,10 +1,6 @@
 home#index
 
 Library component - Filterable Table
-<filterable-table
-  :attributes="<%= @table_attributes %>"
-  endpoint="/tools/list"
-  :filter-array="<%= @filters %>" 
-  :paginated-rows="<%= @paginated[:items].to_json %>"
-  :options="<%= filterableTableOptions %>"
-></filterable-table>
+<page-home
+  :locale-content="<%= get_locale_content('home') %>"
+></page-home>
