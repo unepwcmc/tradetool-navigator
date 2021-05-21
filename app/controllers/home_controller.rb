@@ -7,9 +7,18 @@ class HomeController < ApplicationController
   }.to_json
 
   def index
-    @filters = Tool.filters_to_json
-    @paginated = Tool.paginate(DEFAULT_PARAMS)
-    @table_attributes = Tool::TABLE_ATTRIBUTES.to_json
+    filters = Tool.filters_to_json
+    paginated = Tool.paginate(DEFAULT_PARAMS)
+    table_attributes = Tool::TABLE_ATTRIBUTES
+
+    @filterable_table_props = {
+      attributes: table_attributes.to_json,
+      endpoint: '/tools/list',
+      endpoint_download: 'TODO',
+      filter_array: filters ,
+      paginated_rows: paginated[:items],
+      options: helpers.filterableTableOptions
+    }
   end
 
   def list

@@ -1,6 +1,11 @@
-home#index
-
-Library component - Filterable Table
-<page-home
-  :locale-content="<%= get_locale_content('home') %>"
-></page-home>
+<page-home :locale-content="<%= get_locale_content('home') %>">
+  <filterable-table 
+    :attributes="<%= @filterable_table_props[:attributes] %>"
+    endpoint="<%= @filterable_table_props[:endpoint] %>"
+    endpoint-download="<%= @filterable_table_props[:endpoint_download] %>"
+    :filter-array="<%= @filterable_table_props[:filter_array] %>"
+    :options="<%= @filterable_table_props[:options] %>"
+    :paginatedRows="<%= @filterable_table_props[:paginated_rows].to_json %>"
+  >
+  </filterable-table>
+</page-home>

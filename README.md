@@ -14,3 +14,4 @@
 - `rails import:tools` //not currently working
 - `rails s`
 - `./bin/webpack-dev-server`
+- You will need to re-add the wcmc-components package everytime you re-build it (For example - it still isn't on npm, you pull the latest, create the build files then in this repo you will need to run `yarn add ../wcmc-components`)
