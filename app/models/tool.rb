@@ -11,7 +11,7 @@ class Tool < ApplicationRecord
   filter_on :name, type: 'single', title: 'Name'
 #  filter_on :organisation, type: 'single', title: 'Organisations'
 
-  table_column :name, title: 'Name'
+  # table_column :name, title: 'Name'
  # table_column :organisation, title: 'Organisations'
   table_column :url, title: 'URL'
 #  table_column :created_at, title: 'Country'

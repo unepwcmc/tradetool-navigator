@@ -12,8 +12,8 @@ class HomeController < ApplicationController
     table_attributes = Tool.columns_to_json
 
     @filterable_table_props = {
-      attributes: table_attributes.to_json,
-      endpoint: '/tools/list',
+      attributes: table_attributes,
+      endpoint: '/tools',
       endpoint_download: 'TODO',
       filter_array: filters ,
       paginated_rows: paginated[:items],
