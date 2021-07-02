@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
   
-  post '/tools/list', to: 'home#list'
+  mount WcmcComponents::Engine, at: "/tools", as: 'tools_table'
+
+  # post '/tools/list', to: 'home#list'
 end
