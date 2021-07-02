@@ -3,6 +3,10 @@ require 'wcmc_components'
 
 class Tool < ApplicationRecord
   include WcmcComponents::Loadable
+  include WcmcComponents::Filterable
+
+  ignore_column 'Organisations'
+  ignore_column 'Country'
   
   filter_on :name, type: 'single', title: 'Name'
   filter_on :organisation, type: 'single', title: 'Organisations'
