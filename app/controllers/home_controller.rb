@@ -9,7 +9,7 @@ class HomeController < ApplicationController
   def index
     filters = Tool.filters_to_json
     paginated = Tool.paginate(DEFAULT_PARAMS)
-    table_attributes = Tool::TABLE_ATTRIBUTES
+    table_attributes = Tool.columns_to_json
 
     @filterable_table_props = {
       attributes: table_attributes.to_json,

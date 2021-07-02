@@ -1,1 +1,1 @@
-WcmcComponents.routes_classes = {'/countries/' => 'Country'}
+WcmcComponents.routes_classes = {'/tools/' => 'Tool'}
