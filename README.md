@@ -11,6 +11,7 @@
 - Check versions of Ruby and node
 - `bundle install`
 - `yarn install`
+- `rails db:create db:migrate`
 - `rails import:tools` //not currently working
 - `rails s`
 - `./bin/webpack-dev-server`
