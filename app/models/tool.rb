@@ -15,4 +15,6 @@ class Tool < ApplicationRecord
  # table_column :organisation, title: 'Organisations'
   table_column :url, title: 'URL'
 #  table_column :created_at, title: 'Country'
+
+  exclude_from_modal :url
 end
