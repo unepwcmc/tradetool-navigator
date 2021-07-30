@@ -19,10 +19,4 @@ class Tool < ApplicationRecord
     title: 'URL',
     show_in_table: true,
     show_in_modal: false
-#  filter_on :organisation, type: 'single', title: 'Organisations'
-
-  # table_column :name, title: 'Name'
- # table_column :organisation, title: 'Organisations'
-  # table_column :url, title: 'URL'
-#  table_column :created_at, title: 'Country'
 end
