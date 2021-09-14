@@ -1,9 +1,3 @@
-PATH
-  remote: ../web-components/wcmc_components
-  specs:
-    wcmc_components (0.1.0)
-      rails (~> 5.2.3)
-
 GEM
   remote: https://gem-server.unep-wcmc.org/
   specs:
