@@ -1,29 +1,17 @@
 class HomeController < ApplicationController
-  DEFAULT_PARAMS =
-  {
-    items_per_page: 10,
-    requested_page: 1,
-    filters: []
-  }.to_json
-
   def index
-    filters = Tool.filters_to_json
-    paginated = Tool.paginate(DEFAULT_PARAMS)
-    table_attributes = Tool::TABLE_ATTRIBUTES
-
     @filterable_table_props = {
-      attributes: table_attributes.to_json,
-      endpoint: '/tools/list',
+      attributes: Tool.columns_to_json,
+      endpoint: tools_table_path,
       endpoint_download: 'TODO',
-      filter_array: filters ,
-      paginated_rows: paginated[:items],
+      filter_array: Tool.filters_to_json,
       options: helpers.filterableTableOptions
     }
   end
 
   def list
     @tools = Tool.paginate(params.to_json)
-    
+
     render json: @tools
   end
 end

@@ -3,7 +3,7 @@ import 'regenerator-runtime/runtime'
 import Vue from 'vue/dist/vue.esm'
 import store from '../store.js';
 
-import FilterableTable from 'wcmc-components'
+import FilterableTable from '@unep-wcmc/wcmc-components'
 // import TurbolinksAdapter from 'vue-turbolinks'
 
 Vue.config.productionTip = false

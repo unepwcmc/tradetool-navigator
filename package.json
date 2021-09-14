@@ -3,14 +3,17 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^5.3.0",
+    "@unep-wcmc/wcmc-components": "1.0.5",
+    "autoprefixer": "^9",
     "node-sass": "^5.0.0",
+    "postcss": "^7",
     "sass-loader": "^10",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
     "vue-turbolinks": "^2.2.2",
-    "vuex": "^3.6.2",
-    "wcmc-components": "../wcmc-components"
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "webpack-dev-server": "3.11.2"
