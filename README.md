@@ -14,7 +14,7 @@
 - `yarn install`
 - `rake db:create`
 - `rake db:migrate`
-- `rake import:tools`
+- `rake import:tools['filename.csv']` //csv file must be stored in /lib/data/seeds
 - `rails s`
 - `./bin/webpack-dev-server`
 - You will need to re-add the wcmc-components package everytime you re-build it (For example - it still isn't on npm, you pull the latest, create the build files then in this repo you will need to run `yarn add ../wcmc-components`)
