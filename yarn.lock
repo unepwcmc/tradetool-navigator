@@ -970,6 +970,20 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
+"@unep-wcmc/wcmc-components@../wcmc-components":
+  version "1.0.5"
+  dependencies:
+    "@unep-wcmc/wcmc-components" "../wcmc-components"
+    axios "^0.21.1"
+    core-js "^3.6.5"
+    es6-promise "^4.2.8"
+    lodash "^4.17.21"
+    sass "^1.32.6"
+    sass-loader "^10.1.1"
+    style-resources-loader "^1.4.1"
+    vue "^2.6.11"
+    vuex "^3.6.2"
+
 "@vue/component-compiler-utils@^3.1.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-3.2.0.tgz#8f85182ceed28e9b3c75313de669f83166d11e5d"
@@ -2787,6 +2801,11 @@ es-to-primitive@^1.2.1:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+es6-promise@^4.2.8:
+  version "4.2.8"
+  resolved "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
+  integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -7499,10 +7518,12 @@ wbuf@^1.1.0, wbuf@^1.7.3:
     minimalistic-assert "^1.0.0"
 
 wcmc-components@../wcmc-components:
-  version "0.1.0"
+  version "1.0.5"
   dependencies:
+    "@unep-wcmc/wcmc-components" "../wcmc-components"
     axios "^0.21.1"
     core-js "^3.6.5"
+    es6-promise "^4.2.8"
     lodash "^4.17.21"
     sass "^1.32.6"
     sass-loader "^10.1.1"

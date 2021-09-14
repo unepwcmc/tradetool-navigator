@@ -38,8 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 #Filterable Table
-gem 'wcmc_components', path: '../web-components/wcmc_components'
-# gem 'wcmc-components', '~> 0.0.5', source: "https://gem-server.unep-wcmc.org/"
+gem 'wcmc_components', '~> 0.1.3', source: "https://gem-server.unep-wcmc.org/"
 gem 'will_paginate', '~> 3.0'
 
 group :development, :test do
