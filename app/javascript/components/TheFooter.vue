@@ -1,7 +1,7 @@
 <template>
   <footer class="px-20 py-10 flex justify-between bg-teal-dark text-white">
-    <div class="grid grid-rows-2 gap-y-10">
-      <span>Logo main</span>
+    <div class="w-1/4 grid grid-rows-2 gap-y-10">
+      <img v-bind:src="mainLogo">
       <p>Copyright 2021</p>
     </div>
     <div class="min-w-1/2 grid grid-cols-3 gap-x-10">
@@ -17,18 +17,19 @@ export default {
   name: "TheFooter",
   data() {
     return {
+      mainLogo: require("../images/logo-main.png"),
       logos: [
         {
-          img: "../images/logo-main.png",
-          link: "https://unepwcmc.deltekfirst.com/UNEPWCMC/iAccess/",
+          img: require("../images/logo-GCRF.png"),
+          link: "",
         },
         {
-          img: "blabla",
-          link: "https://unepwcmc.deltekfirst.com/UNEPWCMC/iAccess/",
+          img: require("../images/logo-ukri.svg"),
+          link: "",
         },
         {
           img: "https://s3.amazonaws.com/wcmc.logo/UNEP_WCMC_logo_white.svg",
-          link: "https://unepwcmc.deltekfirst.com/UNEPWCMC/iAccess/",
+          link: "",
         },
       ],
     };
