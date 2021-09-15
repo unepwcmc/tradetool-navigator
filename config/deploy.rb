@@ -6,7 +6,7 @@ set :application, 'tradehub-navigator'
 set :repo_url, 'git@github.com:unepwcmc/tradehub-navigator.git'
 
 set :nvm_type, :user # or :system, depends on your nvm setup
-set :nvm_node, 'v10.15.1'
+set :nvm_node, 'v12.18.3'
 set :nvm_map_bins, %w{node npm yarn}
 
 
@@ -54,7 +54,7 @@ set :pty, true
 # Default value for :linked_files is []
 #set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
-set :linked_files, %w{config/database.yml .env config/master.key}
+set :linked_files, %w{config/database.yml .env config/master.key .npmrc}
 
 # Default value for linked_dirs is []
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'node_modules', 'client/node_modules')
