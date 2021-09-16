@@ -1,9 +1,9 @@
 <template>
   <header>
-    <div class="bg-teal text-white sm:px-20 py-10">
+    <div class="bg-teal text-white p-10 sm:px-20">
       logo
     </div>
-    <div class="hero center">
+    <div class="hero center p-10 sm:px-20">
       <h1>{{ localeContent.title }}</h1>
       <p>{{ localeContent.intro }}</p>
     </div>
