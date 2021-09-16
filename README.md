@@ -27,7 +27,7 @@ bundle exec rake import:tools['filename.csv'] # csv file must be stored in /lib/
 bundle exec rails s
 ```
 
-Install JS dependencies and run webpack
+- Install JS dependencies and run webpack
 
 ```
 yarn install
