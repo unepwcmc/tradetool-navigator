@@ -6,18 +6,25 @@
 - Yarn: 1.22.5
 - Ruby: 2.6.3
 
-- Clone this repo
+- Clone this repo e.g. `git clone git@github.com:unepwcmc/tradehub-navigator.git`
 - Until wcmc-components is on npm - Clone and build lib https://github.com/unepwcmc/wcmc-components
-- cd into treadehub-navigator repo
-- Check versions of Ruby and node
-- `bundle install`
-- `yarn install`
-- `rake db:create`
-- `rake db:migrate`
-- `rake import:tools['filename.csv']` //csv file must be stored in /lib/data/seeds
-- `rails s`
-- `./bin/webpack-dev-server`
-- You will need to re-add the wcmc-components package everytime you re-build it (For example - it still isn't on npm, you pull the latest, create the build files then in this repo you will need to run `yarn add ../wcmc-components`)
+- `cd tradehub-navigator`
 
-## Troubleshooting
-- On errors with rake version try all rake commands with `bundle exec` prior the command e.i. `bundle exec rake db:create`
+```
+nvm use 14.7.0
+```
+
+```
+bundle install
+bundle exec rake db:create
+bundle exec rake db:migrate
+bundle exec rake import:tools['filename.csv'] # csv file must be stored in /lib/data/seeds
+
+bundle exec rails s
+```
+
+
+```
+yarn install
+./bin/webpack-dev-server
+```
