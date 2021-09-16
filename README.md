@@ -6,10 +6,13 @@
 - Yarn: 1.22.5
 - Ruby: 2.6.3
 
-- Clone this repo
+- Clone this repo e.g. `git clone git@github.com:unepwcmc/tradehub-navigator.git`
 - Until wcmc-components is on npm - Clone and build lib https://github.com/unepwcmc/wcmc-components
-- cd into treadehub-navigator repo
-- Check versions of Ruby and node
+- `cd tradehub-navigator`
+
+```
+nvm use 14.7.0
+```
 
 ```
 bundle install
