@@ -15,7 +15,7 @@
         </a>
       </div>
     </div>
-    <p class="mt-8 text-center">Copyright 2021</p>
+    <p class="mt-8 text-center sm:text-left">Copyright 2021</p>
   </footer>
 </template>
 
