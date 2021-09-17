@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       mainLogo: {
-        img: require("../images/logo-main.png"),
+        img: require("../images/logo-main.svg"),
         link: "https://tradehub.earth/",
       },
       logos: [
