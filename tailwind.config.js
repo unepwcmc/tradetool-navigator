@@ -18,15 +18,14 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Raleway", "sans-serif", "system-ui"],
-        // 'serif': ['ui-serif', 'Georgia', ...],
-        // 'mono': ['ui-monospace', 'SFMono-Regular', ...],
-        // 'display': ['Oswald', ...],
-        // 'body': ['"Open Sans"', ...],
       },
       backgroundImage: {
         "hero-pattern-1": "url('./images/hero-pattern-1.jpeg')",
         "hero-pattern-2": "url('./images/hero-pattern-2.jpeg')",
       },
+      minHeight: (theme) => ({
+        ...theme('spacing'),
+      }),
     },
   },
   variants: {
