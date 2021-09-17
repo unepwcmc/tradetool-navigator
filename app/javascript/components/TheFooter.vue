@@ -3,7 +3,7 @@
     <div class="flex items-center sm:items-start flex-col sm:flex-row sm:flex-wrap sm:justify-between">
       <div class="pb-6 w-3/5 sm:w-2/5 xl:w-1/6 md:w-1/4 sm:grid grid-rows-2 sm:gap-y-12">
         <a :href="mainLogo.link">
-          <img v-bind:src="mainLogo.img" />
+          <img :src="mainLogo.img" />
         </a>
       </div>
       <div class="w-full sm:w-2/5 xl:w-1/3 grid grid-cols-3 gap-10">
