@@ -1,5 +1,9 @@
 module.exports = {
-  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  // enabled: process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'production',
+  purge: {
+    enabled: true,  
+    content: ['./app/**/*.html.erb', './app/helpers/**/*.rb', './app/javascript/**/**/*.vue', './app/javascript/**/*.js', './app/javascript/*.js'], 
+  }, 
   darkMode: false,
   theme: {
     extend: {
@@ -20,8 +24,8 @@ module.exports = {
         sans: ["Raleway", "sans-serif", "system-ui"],
       },
       backgroundImage: {
-        "hero-pattern-1": "url('./images/hero-pattern-1.jpeg')",
-        "hero-pattern-2": "url('./images/hero-pattern-2.jpeg')",
+        "hero-pattern-1": "url('../images/hero-pattern-1.jpeg')",
+        "hero-pattern-2": "url('../images/hero-pattern-2.jpeg')",
       },
       minHeight: (theme) => ({
         ...theme('spacing'),
