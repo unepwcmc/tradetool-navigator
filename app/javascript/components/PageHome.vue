@@ -2,7 +2,7 @@
   <div class="min-h-screen w-full grid font-sans">
     <TheHero
       :localeContent="localeContent.hero"
-      :logos="logos.mainLogo"
+      :logos="logos"
     />
     <slot />
     <TheFooter 
@@ -14,7 +14,7 @@
 <script>
 import TheHero from './TheHero.vue'
 import TheFooter from './TheFooter.vue'
-// import { logos } from '../data/logos.js'
+import logos from '../data/logos.js'
 
 export default {
   name: 'Home',
@@ -29,6 +29,10 @@ export default {
       type: Object
     },
   },
+
+  data: () => ({
+    logos: logos
+  }),
 
   methods: {
 

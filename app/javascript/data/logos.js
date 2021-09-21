@@ -1,9 +1,9 @@
 const logos = {
-  mainLogo: {
+  main: {
     img: require("../images/logo-main.svg"),
     link: "https://tradehub.earth/",
   },
-  logos: [
+  other: [
     {
       img: require("../images/logo-GCRF.png"),
       link:

@@ -3,9 +3,9 @@
     <div class="bg-teal text-white p-6 sm:px-20">
         <a 
         class="block w-2/5 sm:w-1/4 xl:w-1/6" 
-        :href="mainLogo.link"
+        :href="logos.main.link"
         >
-          <img :src="mainLogo.img" />
+          <img :src="logos.main.img" />
         </a>
     </div>
     <div class="w-full min-h-96 flex flex-col items-center text-white bg-hero-pattern-1 bg-no-repeat bg-cover bg-left-center font-semibold">
@@ -22,16 +22,10 @@ export default {
   props: {
     localeContent: {
       type: Object
+    },
+    logos: {
+      type: Object
     }
   },
-
-  data () {
-    return {
-      mainLogo: {
-        img: require("../images/logo-main.svg"),
-        link: "https://tradehub.earth/",
-      },
-    }
-  }
 }
 </script>
