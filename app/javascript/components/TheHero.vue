@@ -1,9 +1,9 @@
 <template>
   <header>
-    <div class="topbar">
+    <div class="bg-teal text-white sm:px-20 py-10">
       logo
     </div>
-    <div class="hero">
+    <div class="hero center">
       <h1>{{ localeContent.title }}</h1>
       <p>{{ localeContent.intro }}</p>
     </div>
@@ -26,24 +26,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-$grey-xdark: #1B2024;
-
-body { 
-  margin: 0;
-}
-
-.topbar {
-  background-color: $grey-xdark;
-  color: #fff;
-  height: 100px;
-}
-
-.hero {
-  background-color: #ccc;
-  color: #fff;
-  height: 500px;
-}
-
-</style>
