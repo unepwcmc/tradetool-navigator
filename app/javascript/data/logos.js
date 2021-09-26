@@ -1,7 +1,11 @@
 const logos = {
   main: {
     img: require("../images/logo-main.svg"),
-    link: "https://tradehub.earth/",
+    link: "./",
+  },
+  tradehub: { 
+    text: "Official GCRF TRADE Hub Site", 
+    link:"https://tradehub.earth/"
   },
   other: [
     {
