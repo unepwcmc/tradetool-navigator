@@ -3,15 +3,22 @@
     <div class="flex items-center sm:items-start flex-col sm:flex-row sm:flex-wrap sm:justify-between">
       <div class="pb-6 w-3/5 sm:w-2/5 xl:w-1/6 md:w-1/4 sm:grid grid-rows-2 sm:gap-y-12">
         <a :href="logos.main.link">
-          <img :src="logos.main.img" />
+          <img 
+          :src="logos.main.img" 
+          alt=""
+          />
         </a>
       </div>
       <div class="w-full sm:w-2/5 xl:w-1/3 grid grid-cols-3 gap-10">
-        <a 
-        :href="logo.link" 
+        <a  
         v-for="logo in logos.other" :key="logo.img"
+        :href="logo.link"
+        :title="logo.title"
         >
-          <img :src="logo.img" />
+          <img 
+          :src="logo.img" 
+          alt=""
+          />
         </a>
       </div>
     </div>

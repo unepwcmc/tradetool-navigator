@@ -4,8 +4,9 @@
         <a 
         class="block w-2/5 sm:w-1/4 xl:w-1/6" 
         :href="logos.main.link"
+        :title="logos.main.title"
         >
-          <img :src="logos.main.img" />
+          <img :src="logos.main.img" alt=""/>
         </a>
         <a
         class="block self-center text-right" 
