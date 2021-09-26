@@ -2,7 +2,13 @@ module.exports = {
   // enabled: process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'production',
   purge: {
     enabled: true,  
-    content: ['./app/**/*.html.erb', './app/helpers/**/*.rb', './app/javascript/**/**/*.vue', './app/javascript/**/*.js', './app/javascript/*.js'], 
+    content: [
+      './app/**/*.html.erb', 
+      './app/helpers/**/*.rb', 
+      './app/javascript/**/**/*.vue', 
+      './app/javascript/**/*.js', 
+      './app/javascript/*.js'
+    ], 
   }, 
   darkMode: false,
   theme: {
