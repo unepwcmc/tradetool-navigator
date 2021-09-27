@@ -1,5 +1,5 @@
-name,url,Organisations,Partners,Theme,Donor,Typology,Country,ID
-AGRICTRADE,https://agrictrade.net/trade-data/,Agricultural Market and Trade Department of the Permanent Interstate Committee for Drought Control in the Sahel (CILSS),,,,Data portal,,1 TTI
+name,url,organisation,partners,theme,donors,typologies,countries,tool_id
+AGRICTRADE,https://agrictrade.net/trade-data/,Agricultural sMarket and Trade Department of the Permanent Interstate Committee for Drought Control in the Sahel (CILSS),,,,Data portal,,1 TTI
 Agri Food Data Portal,agridata.ec.europa.euÂ ,European Union,,,,Data portal,EU,2 TTI
 AHDB Cereals and oilseed dashboard,https://ahdb.org.uk/cereals-and-oilseeds/trade-dashboard,Agricultural and Horticulatural Develpoment Board (AHDB),,,,Visualisation / dashboard,UK,3 TTI
 Beef Market Central,https://beefmarketcentral.com/fccp-app-download-landing-page-18586,Merck Animal Health,Drovers;Responsible Beef,,,Other - Statistics; Digital reports; Data portal,,6 TTI

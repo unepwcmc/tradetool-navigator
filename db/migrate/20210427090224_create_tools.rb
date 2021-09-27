@@ -4,11 +4,11 @@ class CreateTools < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :url
       t.string :organisations
-      t.string :typology
+      t.string :typologies
       t.string :theme
       t.string :partners
-      t.string :donor
-      t.string :country
+      t.string :donors
+      t.string :countries
       t.string :tool_id
     end
   end
