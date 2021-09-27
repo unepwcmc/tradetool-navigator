@@ -5,7 +5,7 @@
         <a :href="logos.main.link">
           <img 
           :src="logos.main.img" 
-          alt=""
+          :alt="logos.main.title"
           />
         </a>
       </div>
@@ -17,7 +17,7 @@
         >
           <img 
           :src="logo.img" 
-          alt=""
+          :alt="logo.title"
           />
         </a>
       </div>

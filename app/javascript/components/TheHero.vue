@@ -6,7 +6,10 @@
         :href="logos.main.link"
         :title="logos.main.title"
         >
-          <img :src="logos.main.img" alt=""/>
+          <img 
+          :src="logos.main.img" 
+          :alt="logos.main.title"
+          />
         </a>
         <a
         class="block self-center text-right" 
