@@ -14,6 +14,7 @@
         <a
         class="block self-center text-right" 
         :href="logos.tradehub.link"
+        :title="logos.tradehub.text"
         >
           {{logos.tradehub.text}}
         </a>
