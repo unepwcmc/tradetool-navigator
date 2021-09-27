@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen w-full grid font-sans text-sm md:text-base">
+  <div class="min-h-screen w-full grid font-sans text-xs sm:text-sm md:text-base">
     <TheHero
       :localeContent="localeContent.hero"
       :logos="logos"
