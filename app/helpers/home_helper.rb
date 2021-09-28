@@ -1,16 +1,19 @@
 module HomeHelper
-  COLOR_PRIMARY = '#AFB90F'
+  LIME = '#AFB90F'
+  TEAL = '#2F4F5D'
 
   def filterableTableOptions
     {
+      fontFamily: 'Raleway, sans-serif',
       download: {
-        bgColor: COLOR_PRIMARY
+        bgColor: LIME,
+        bgColorHover: TEAL
       },
       filters: {
         buttonApply: {
-          borderColor: COLOR_PRIMARY,
+          borderColor: LIME,
           borderWidth: '1px',
-          colorBg: '#AFB90F',
+          colorBg: LIME,
           colorText: '#fff',
           textTransform: 'uppercase'
         },
@@ -25,35 +28,36 @@ module HomeHelper
           textTransform: 'uppercase'
         },
         filterOptions: {
-          tickFill: '#AFB90F'
+          tickFill: TEAL
         },
         trigger: {
           colorBg: '#F8F8F8',
-          colorBgActive: '#2F4F5D',
-          colorBgHover: '#2F4F5D',
-          colorBgSelected: '#2F4F5D',
+          colorBgActive: TEAL,
+          colorBgHover: TEAL,
+          colorBgSelected: TEAL,
         }
       },
       headings: {
-        bgColor: '#2F4F5D',
-        borderColor: '#2F4F5D'
+        bgColor: TEAL,
+        borderColor: TEAL
       },
       modal: {
-        closeBgColor: '#AFB90F',
+        closeBgColor: LIME,
         closeBorderRadius: '2px',
         crossFill: '#fff',
         wrapperColor: 'rgba(255,255,255,.8)'
       },
       pagination: {
         buttonBorderRadius: '2px',
-        buttonBgColor: '#AFB90F',
+        buttonBgColor: LIME,
         textTitle: 'Showing',
         textItems: 'entries'
       },
       rows: {
         bgColor1: '#F7FAFB',
         bgColor2: '#FEFFFF',
-        borderColor: 'transparent'
+        borderColor: 'transparent',
+        buttonHoverColor: LIME,
       }
     }.to_json
   end
