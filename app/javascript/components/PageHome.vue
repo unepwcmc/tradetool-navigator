@@ -3,7 +3,7 @@
     <TheHero
       :localeContent="localeContent.hero"
     />
-    <slot />
+    <slot class="p-10"/>
     <TheFooter />
   </div>  
 </template>

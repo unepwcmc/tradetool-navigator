@@ -5,8 +5,6 @@ class Tool < ApplicationRecord
   include WcmcComponents::Loadable
   include WcmcComponents::Filterable
 
-  # ignore_column 'Organisations'
-  # ignore_column 'Country'
   has_and_belongs_to_many :countries
   import_by countries: :name
 

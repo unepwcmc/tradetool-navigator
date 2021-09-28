@@ -1,5 +1,6 @@
 <page-home :locale-content="<%= get_locale_content('home') %>">
-  <filterable-table 
+  <filterable-table
+    class="p-10 md:px-20"
     :attributes="<%= @filterable_table_props[:attributes] %>"
     endpoint="<%= @filterable_table_props[:endpoint] %>"
     endpoint-download="<%= @filterable_table_props[:endpoint_download] %>"
