@@ -3,8 +3,18 @@ module HomeHelper
   TEAL = '#2F4F5D'
 
   def filterableTableOptions
-    {
+    { 
       fontFamily: 'Raleway, sans-serif',
+      columns: {
+        widths: [
+          '1fr', 
+          '2fr', 
+          '1fr', 
+          '1fr',
+          '1fr', 
+          '80px'
+        ], # Length = attributes.length + 1
+      },
       download: {
         bgColor: LIME,
         bgColorHover: TEAL
@@ -57,7 +67,7 @@ module HomeHelper
         bgColor1: '#F7FAFB',
         bgColor2: '#FEFFFF',
         borderColor: 'transparent',
-        buttonHoverColor: LIME,
+        buttonHoverColor: TEAL,
       }
     }.to_json
   end
