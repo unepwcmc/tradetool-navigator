@@ -38,7 +38,7 @@ class Tool < ApplicationRecord
 
   table_attr :typologies,
     title: 'Typology',
-    filter_on: true,
+    # filter_on: true,
     type: 'multiple',
     show_in_table: true,
     show_in_modal: true
