@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
   create_table "tools", force: :cascade do |t|
     t.string "name"
     t.string "url"
-    t.string "organisation"
+    t.string "organisations"
     t.string "typologies"
     t.string "theme"
     t.string "partners"
