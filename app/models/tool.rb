@@ -29,7 +29,7 @@ class Tool < ApplicationRecord
     show_in_table: true,
     show_in_modal: true
     
-  table_attr :organisation,
+  table_attr :organisations,
     title: 'Lead organisation',
     filter_on: true,
     type: 'single',
