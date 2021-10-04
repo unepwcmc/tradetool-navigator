@@ -10,6 +10,7 @@ Vue.config.productionTip = false
 Vue.use(FilterableTable, { store })
 // Vue.use(TurbolinksAdapter)
 import PageHome from '../components/PageHome.vue'
+require('../stylesheets/application.scss')
 
 // document.addEventListener('turbolinks:load', () => {
 document.addEventListener('DOMContentLoaded', () => {

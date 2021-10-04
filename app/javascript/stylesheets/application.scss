@@ -1,17 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "./_custom.scss";
+
 @layer base {
-    h1 {
-        @apply text-5xl;
-    }
-    h2 {
-        @apply text-3xl;
-    }
-    h3 {
-        @apply text-lg;
-    }
+  h1 {
+    @apply text-4xl; 
+    @apply md:text-5xl;
+  }
+  h2 {
+    @apply text-2xl; 
+    @apply md:text-3xl;
+  }
+  h3 {
+    @apply text-base;
+    @apply md:text-lg;
+  }
+  .overlay {
+    @include bg-image-overlay(rgba(black, 0.3));
+  }
 }
+
+
