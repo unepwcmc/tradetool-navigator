@@ -1,16 +1,20 @@
 <template>
-  <div class="min-h-screen w-full grid font-sans">
+  <div class="min-h-screen w-full grid font-sans text-xs sm:text-sm md:text-base">
     <TheHero
       :localeContent="localeContent.hero"
+      :logos="logos"
     />
-    <slot class="p-10"/>
-    <TheFooter />
+    <slot />
+    <TheFooter 
+      :logos="logos"
+    />
   </div>  
 </template>
 
 <script>
 import TheHero from './TheHero.vue'
 import TheFooter from './TheFooter.vue'
+import logos from '../data/logos.js'
 
 export default {
   name: 'Home',
@@ -23,8 +27,12 @@ export default {
   props: {
     localeContent: {
       type: Object
-    }
+    },
   },
+
+  data: () => ({
+    logos: logos
+  }),
 
   methods: {
 

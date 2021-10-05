@@ -63,6 +63,7 @@ group :development do
   gem 'capistrano-rvm',   '~> 0.1', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rails_real_favicon'
 end
 
 group :test do
