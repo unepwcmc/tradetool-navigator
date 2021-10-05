@@ -38,7 +38,10 @@ module HomeHelper
           textTransform: 'uppercase'
         },
         filterOptions: {
-          tickFill: TEAL
+          tickFill: TEAL,
+          labels: {
+            truncate: true,
+          },
         },
         trigger: {
           colorBg: '#F8F8F8',
