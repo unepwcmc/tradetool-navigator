@@ -39,9 +39,7 @@ module HomeHelper
         },
         filterOptions: {
           tickFill: TEAL,
-          labels: {
-            truncate: true,
-          },
+          labels: 'truncate'
         },
         trigger: {
           colorBg: '#F8F8F8',
