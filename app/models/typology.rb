@@ -1,0 +1,3 @@
+class Typology < ApplicationRecord
+
+end
