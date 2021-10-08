@@ -58,6 +58,7 @@ class Tool < ApplicationRecord
   
   table_attr :donors,
     title: 'Donors',
+    filter_on: true,
     type: 'multiple',
     show_in_table: false,
     show_in_modal: true
