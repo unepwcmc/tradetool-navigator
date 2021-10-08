@@ -5,6 +5,7 @@ class HomeController < ApplicationController
       endpoint: tools_table_path,
       endpoint_download: 'TODO',
       filter_array: Tool.filters_to_json,
+      legend_array: Tool.legends_to_json,
       options: helpers.filterableTableOptions
     }
   end

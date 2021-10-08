@@ -26,6 +26,7 @@ class Tool < ApplicationRecord
   table_attr :url,
     title: 'Resource',
     type: 'single',
+    legend_on: true,
     show_in_table: true,
     show_in_modal: true
     
@@ -39,6 +40,7 @@ class Tool < ApplicationRecord
   table_attr :typologies,
     title: 'Typology',
     filter_on: true,
+    legend_on: true,
     type: 'multiple',
     show_in_table: true,
     show_in_modal: true
