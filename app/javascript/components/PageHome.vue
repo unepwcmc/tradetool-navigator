@@ -5,6 +5,9 @@
       :logos="logos"
     />
     <slot />
+    <TheFeedback
+      :text="textFeedback"
+    /> 
     <TheFooter 
       :logos="logos"
     />
@@ -13,6 +16,7 @@
 
 <script>
 import TheHero from './TheHero.vue'
+import TheFeedback from './TheFeedback.vue'
 import TheFooter from './TheFooter.vue'
 import logos from '../data/logos.js'
 
@@ -20,6 +24,7 @@ export default {
   name: 'Home',
 
   components: {
+    TheFeedback, 
     TheFooter,
     TheHero,
   },
@@ -28,6 +33,9 @@ export default {
     localeContent: {
       type: Object
     },
+    textFeedback: {
+      type: String
+    }
   },
 
   data: () => ({
