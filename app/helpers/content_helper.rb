@@ -18,7 +18,7 @@ module ContentHelper
   end
 
   def content_img_path 
-    image_pack_tag 'hero-pattern-1.jpeg'
+    asset_pack_url("media/images/hero-pattern-1.jpeg")
   end
 
   def twitter_card
