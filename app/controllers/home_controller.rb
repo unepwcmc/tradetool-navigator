@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     @filterable_table_props = {
       attributes: Tool.columns_to_json,
       endpoint: tools_table_path,
-      endpoint_download: 'TODO',
+      endpoint_download: '/tools/download',
       filter_array: Tool.filters_to_json,
       options: helpers.filterableTableOptions
     }
