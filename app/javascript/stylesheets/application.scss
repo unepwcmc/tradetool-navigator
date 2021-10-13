@@ -11,20 +11,28 @@
     @apply text-4xl; 
     @apply md:text-5xl;
   }
+
   h2 {
     @apply text-2xl; 
     @apply md:text-3xl;
   }
+
   h3 {
     @apply text-base;
     @apply md:text-lg;
   }
+
   .overlay {
     @include bg-image-overlay(rgba(black, 0.3));
   }
-    svg {
-        display: inline-block;
-    }
-}
 
+  svg {
+    display: inline-block;
+  }
+  
+  span[class*="data-portal"] {
+
+    @apply bg-data-platform;
+  }
+}
 

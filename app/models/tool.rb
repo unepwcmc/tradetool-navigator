@@ -58,13 +58,13 @@ class Tool < ApplicationRecord
     title: 'Developers',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: true  
+    show_in_modal: false
 
   table_attr :donors,
     title: 'Donors',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: false
 
   table_attr :typologies,
     title: 'Typology',
@@ -102,7 +102,6 @@ class Tool < ApplicationRecord
   
   table_attr :frequncies,
     title: 'Update frequency',
-    filter_on: true,
     type: 'single',
     show_in_table: false,
     show_in_modal: true
@@ -118,7 +117,7 @@ class Tool < ApplicationRecord
     title: 'Country',
     type: 'single',
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: false
   
   table_attr :tool_id,
     title: 'Unique ID',
