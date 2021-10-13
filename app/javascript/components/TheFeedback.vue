@@ -1,7 +1,7 @@
 <template>
-  <div class="p-10 sm:px-20">  
-    <div class="">
-      <div v-html="text" />
+  <div class="bg-ash-light">  
+    <div class="p-10 sm:px-64">
+      <div class="text-xs" v-html="text" />
     </div>
   </div>
 </template>

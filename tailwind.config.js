@@ -15,7 +15,7 @@ module.exports = {
     extend: {
       colors: {
         ash: {
-          ligth: "#F7FAFB",
+          light: "#F7FAFB",
           DEFAULT: "#00000029",
           dark: "#707070",
         },
