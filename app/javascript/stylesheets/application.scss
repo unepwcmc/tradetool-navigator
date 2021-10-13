@@ -6,6 +6,7 @@
 
 @import "./_custom.scss";
 
+
 @layer base {
   h1 {
     @apply text-4xl; 
@@ -29,10 +30,6 @@
   svg {
     display: inline-block;
   }
-  
-  span[class*="data-portal"] {
 
-    @apply bg-data-platform;
-  }
 }
 
