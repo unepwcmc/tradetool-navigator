@@ -4,7 +4,8 @@ class HomeController < ApplicationController
       attributes: Tool.columns_to_json,
       endpoint: tools_table_path,
       endpoint_download: '/tools/download',
-      filter_array: Tool.filters_to_json,
+      filter_array: Tool.attributes_to_json('filters'),
+      legend_array: Tool.attributes_to_json('legends'),
       options: helpers.filterableTableOptions
     }
   end
