@@ -22,18 +22,25 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
     t.string "typologies"
     t.string "theme"
     t.string "partners"
+    t.string "developers"
     t.string "donors"
+    t.string "keywords"
+    t.string "descriptions"
+    t.string "spatial_scale"
+    t.string "frequncies"
     t.string "countries"
+    t.string "users"
+    t.string "contacts"
     t.string "tool_id"
+  end
+
+  create_table "organisations_tools", id: false, force: :cascade do |t|
+    t.bigint "organisation_id", null: false
+    t.bigint "tool_id", null: false
   end
 
   create_table "countries_tools", id: false, force: :cascade do |t|
     t.bigint "country_id", null: false
-    t.bigint "tool_id", null: false
-  end
-
-  create_table "tools_typologies", id: false, force: :cascade do |t|
-    t.bigint "typology_id", null: false
     t.bigint "tool_id", null: false
   end
 
@@ -42,9 +49,41 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
     t.bigint "tool_id", null: false
   end
 
+  create_table "developers_tools", id: false, force: :cascade do |t|
+    t.bigint "developer_id", null: false
+    t.bigint "tool_id", null: false
+  end
+
   create_table "donors_tools", id: false, force: :cascade do |t|
     t.bigint "donor_id", null: false
     t.bigint "tool_id", null: false
+  end
+
+  create_table "keywords_tools", id: false, force: :cascade do |t|
+    t.bigint "keyword_id", null: false
+    t.bigint "tool_id", null: false
+  end
+
+  create_table "tools_typologies", id: false, force: :cascade do |t|
+    t.bigint "typology_id", null: false
+    t.bigint "tool_id", null: false
+  end
+
+  create_table "tools_users", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "tool_id", null: false
+  end
+
+  create_table "organisations", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "keywords", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "countries", force: :cascade do |t|
@@ -65,10 +104,21 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "developers", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "donors", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 end
