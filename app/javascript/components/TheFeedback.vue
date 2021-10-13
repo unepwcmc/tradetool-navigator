@@ -1,7 +1,7 @@
 <template>
-  <div class="">  
+  <div class="p-10 sm:px-20">  
     <div class="">
-      <p v-html="text" />
+      <div v-html="text" />
     </div>
   </div>
 </template>
