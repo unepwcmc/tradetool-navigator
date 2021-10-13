@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TradeToolsNavigator</title>
+    <title><%= get_content_value('home','hero','title') %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
     <%= render 'application/favicon' %>
+    <%= render 'application/metatags' %>
   </head>
 
   <body>
