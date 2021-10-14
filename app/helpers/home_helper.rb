@@ -55,8 +55,12 @@ module HomeHelper
       modal: {
         closeBgColor: LIME,
         closeBorderRadius: '2px',
-        crossFill: '#fff',
+        crossFill: '#F7FAFB',
         wrapperColor: 'rgba(255,255,255,.8)'
+      },
+      legend: {
+        buttonTitle: 'Legend',
+        buttonClass: 'legend-icon'
       },
       pagination: {
         buttonBorderRadius: '2px',
@@ -67,6 +71,7 @@ module HomeHelper
       rows: {
         bgColor1: '#F7FAFB',
         bgColor2: '#FEFFFF',
+        bgColorMobile: '#F7FAFB',
         borderColor: 'transparent',
         buttonHoverColor: TEAL,
       }
