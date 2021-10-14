@@ -13,3 +13,66 @@
     z-index: -1;
   }
 }
+
+.legend__icon.legend-icon {
+  @apply bg-legend-icon;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.95rem 0 0.95rem 0.95rem;
+}
+
+.data-platform {
+  @apply bg-data-platform;
+}
+
+.data-portal {
+  @apply bg-data-portal;
+}
+
+.data-services {
+  @apply bg-data-services;
+}
+
+.data-source {
+  @apply bg-data-source;
+}
+
+.database {
+  @apply bg-data-source;
+}
+
+.decision-support-tool {
+  @apply bg-decision-support-tool;
+}
+
+.digital-reports {
+  @apply bg-digital-reports;
+}
+
+.flexible-analysis-platform {
+  @apply bg-flexible-analysis-platform;
+}
+
+.library-catalogue {
+  @apply bg-library-catalogue;
+}
+
+.model {
+  @apply bg-model;
+}
+
+.other---statistics {
+  @apply bg-other---statistics;
+}
+
+.other---initiative-organisation {
+  @apply bg-other---initiative-organisation;
+}
+
+.other---repository {
+  @apply bg-other---repository;
+}
+
+.visualisation---dashboard {
+  @apply bg-visualisation---dashboard;
+}
