@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_27_090224) do
+ActiveRecord::Schema.define(version: 2021_10_14_170000) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
   end
 
   create_table "countries_tools", id: false, force: :cascade do |t|
-    t.bigint "country_id", null: false
     t.bigint "tool_id", null: false
+    t.bigint "country_id", null: false
   end
 
   create_table "developers", force: :cascade do |t|
@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
   end
 
   create_table "developers_tools", id: false, force: :cascade do |t|
-    t.bigint "developer_id", null: false
     t.bigint "tool_id", null: false
+    t.bigint "developer_id", null: false
   end
 
   create_table "donors", force: :cascade do |t|
@@ -44,8 +44,8 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
   end
 
   create_table "donors_tools", id: false, force: :cascade do |t|
-    t.bigint "donor_id", null: false
     t.bigint "tool_id", null: false
+    t.bigint "donor_id", null: false
   end
 
   create_table "keywords", force: :cascade do |t|
@@ -55,8 +55,8 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
   end
 
   create_table "keywords_tools", id: false, force: :cascade do |t|
-    t.bigint "keyword_id", null: false
     t.bigint "tool_id", null: false
+    t.bigint "keyword_id", null: false
   end
 
   create_table "organisations", force: :cascade do |t|
@@ -66,8 +66,8 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
   end
 
   create_table "organisations_tools", id: false, force: :cascade do |t|
-    t.bigint "organisation_id", null: false
     t.bigint "tool_id", null: false
+    t.bigint "organisation_id", null: false
   end
 
   create_table "partners", force: :cascade do |t|
@@ -77,37 +77,29 @@ ActiveRecord::Schema.define(version: 2021_04_27_090224) do
   end
 
   create_table "partners_tools", id: false, force: :cascade do |t|
-    t.bigint "partner_id", null: false
     t.bigint "tool_id", null: false
+    t.bigint "partner_id", null: false
   end
 
   create_table "tools", force: :cascade do |t|
     t.string "name"
     t.string "url"
-    t.string "organisations"
-    t.string "typologies"
     t.string "theme"
-    t.string "partners"
-    t.string "developers"
-    t.string "donors"
-    t.string "keywords"
     t.string "descriptions"
     t.string "spatial_scale"
     t.string "frequncies"
-    t.string "countries"
-    t.string "users"
     t.string "contacts"
     t.string "tool_id"
   end
 
   create_table "tools_typologies", id: false, force: :cascade do |t|
-    t.bigint "typology_id", null: false
     t.bigint "tool_id", null: false
+    t.bigint "typology_id", null: false
   end
 
   create_table "tools_users", id: false, force: :cascade do |t|
-    t.bigint "user_id", null: false
     t.bigint "tool_id", null: false
+    t.bigint "user_id", null: false
   end
 
   create_table "typologies", force: :cascade do |t|
