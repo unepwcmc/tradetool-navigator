@@ -22,7 +22,9 @@ nvm use 14.7.0
 bundle install
 bundle exec rake db:create
 bundle exec rake db:migrate
-bundle exec rake import:tools['filename.csv'] # csv file must be stored in /lib/data/seeds 
+bundle exec rake import:tools['filename.csv'] 
+
+# any new csv file must be stored in /lib/data/seeds 
 
 bundle exec rails s
 ```
@@ -36,5 +38,19 @@ bundle exec rake import:tools['tools-navigator.csv']
 
 ```
 yarn install
-./bin/webpack-dev-server
+bin/webpack-dev-server
+```
+### Deployment
+
+`bundle exec cap staging deploy`
+
+log in to the server
+```
+ssh -i  ~/.ssh/{your-key} wcmc@web-supported-staging.linode.unep-wcmc.org
+cd tradehub-navigator/current
+RAILS_ENV=staging bundle exec rake db:drop
+RAILS_ENV=staging bundle exec rake db:create
+RAILS_ENV=staging bundle exec rake db:migrate
+RAILS_ENV=staging bundle exec rake import:tools['tools-navigator.csv']
+
 ```
