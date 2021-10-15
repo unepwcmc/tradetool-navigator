@@ -10,7 +10,7 @@ default: &default
   resolved_paths: ['app/javascript/images', 'app/assets/images']
   # Additional paths webpack should lookup modules
   # ['app/assets', 'engine/foo/app/assets']
-  additional_paths: []
+  additional_paths: ['app/javascript/']
 
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
@@ -29,12 +29,14 @@ default: &default
     - .gif
     - .jpeg
     - .jpg
+  
+  # this assures that tailwind will be included in prod and staging
+  extract_css: true
 
 development:
   <<: *default
   compile: true
-  extractStyle: true
-  
+
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
     https: false
