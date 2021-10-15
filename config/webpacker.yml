@@ -15,6 +15,9 @@ default: &default
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
 
+  # this assures that tailwind will be included in prod and staging otherwise webpack drops it
+  extract_css: true
+
   extensions:
     - .vue
     - .js
@@ -30,8 +33,6 @@ default: &default
     - .jpeg
     - .jpg
   
-  # this assures that tailwind will be included in prod and staging
-  extract_css: true
 
 development:
   <<: *default
