@@ -4,8 +4,14 @@
       :localeContent="localeContent.hero"
       :logos="logos"
     />
+    <TheTextBlock
+      :background="'bg-ash'"
+      :color="'black'"
+      :text="textAttribution"
+    />
     <slot />
-    <TheFeedback
+    <TheTextBlock
+      :background="'bg-ash-light'"
       :text="textFeedback"
     /> 
     <TheFooter 
@@ -16,7 +22,7 @@
 
 <script>
 import TheHero from './TheHero.vue'
-import TheFeedback from './TheFeedback.vue'
+import TheTextBlock from './TheTextBlock.vue'
 import TheFooter from './TheFooter.vue'
 import logos from '../data/logos.js'
 
@@ -24,7 +30,7 @@ export default {
   name: 'Home',
 
   components: {
-    TheFeedback, 
+    TheTextBlock, 
     TheFooter,
     TheHero,
   },
@@ -34,6 +40,9 @@ export default {
       type: Object
     },
     textFeedback: {
+      type: String
+    },
+    textAttribution: {
       type: String
     }
   },
