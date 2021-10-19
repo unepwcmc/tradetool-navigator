@@ -17,7 +17,8 @@ module HomeHelper
       },
       download: {
         bgColor: LIME,
-        bgColorHover: TEAL
+        bgColorHover: TEAL,
+        text: 'Download'
       },
       filters: {
         buttonApply: {
