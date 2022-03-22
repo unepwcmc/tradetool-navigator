@@ -1,5 +1,8 @@
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
+// cookieconsent
+import 'cookieconsent'
+import 'cookieconsent/build/cookieconsent.min.css'
 import Vue from 'vue/dist/vue.esm'
 import store from '../store.js';
 import FilterableTable from '@unep-wcmc/wcmc-components'
