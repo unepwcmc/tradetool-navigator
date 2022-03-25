@@ -1,6 +1,7 @@
 <template>  
   <div class="bg-green-600 h-40">
-  <FilterableTable>Filterable table here !!!!!</FilterableTable>
+    Filterable table here !!!!!
+    <FilterableTable />
 </div>
 </template>
 
