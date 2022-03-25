@@ -4,16 +4,8 @@
       :localeContent="localeContent.hero"
       :logos="logos"
     />
-    <TheTextBlock
-      :background="'bg-ash'"
-      :color="'black'"
-      :text="textAttribution"
-    />
-    <slot />
-    <TheTextBlock
-      :background="'bg-ash-light'"
-      :text="textFeedback"
-    /> 
+      <router-view />
+    <!-- <slot /> -->
     <TheFooter 
       :logos="logos"
     />

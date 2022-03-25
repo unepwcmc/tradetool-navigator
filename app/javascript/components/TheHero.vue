@@ -11,6 +11,8 @@
           :alt="logos.main.title"
           />
         </a>
+        <router-link to="/">Home</router-link>
+        <router-link to="/terms-conditions">Terms and conditions</router-link>
         <a
         class="block self-center text-right" 
         :href="logos.tradehub.link"

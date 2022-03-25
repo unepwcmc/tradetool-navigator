@@ -8,6 +8,10 @@ class HomeController < ApplicationController
       legend_array: Tool.attributes_to_json('legends'),
       options: helpers.filterableTableOptions
     }
+    respond_to do |format|
+      format.html
+      format.json { render json: @filterable_table_props }
+    end
   end
 
   def list
