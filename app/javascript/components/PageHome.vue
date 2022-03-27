@@ -4,8 +4,7 @@
       :localeContent="localeContent.hero"
       :logos="logos"
     />
-      <router-view />
-    <!-- <slot /> -->
+      <slot />
     <TheFooter 
       :logos="logos"
     />

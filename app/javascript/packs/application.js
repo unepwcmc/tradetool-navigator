@@ -4,18 +4,9 @@ import Vue from 'vue/dist/vue.esm'
 import store from '../store.js';
 import FilterableTable from '@unep-wcmc/wcmc-components'
 import '../stylesheets/application.scss';
-// import TurbolinksAdapter from 'vue-turbolinks'
-import VueRouter from 'vue-router';
-import Routes from './routes.js'
-import FilterableTableVue from '../components/FilterableTableVue.vue'
 import PageHome from '../components/PageHome.vue'
 import TermsAndConditions from '../components/TermsAndConditions.vue'
-
-Vue.use(VueRouter);
-    
-const router = new VueRouter({
-  routes: Routes,
-});
+import About from '../components/About.vue'
 
 Vue.config.productionTip = false
 Vue.use(FilterableTable, { store })
@@ -36,10 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
       store,
       components: {
         PageHome,
-        FilterableTableVue,
-        TermsAndConditions
-      },
-      router: router,
+        TermsAndConditions,
+        About
+      }
     })
   }
 })

@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class PagesController < ApplicationController
   def index
     @filterable_table_props = {
       attributes: Tool.columns_to_json,
@@ -8,15 +8,17 @@ class HomeController < ApplicationController
       legend_array: Tool.attributes_to_json('legends'),
       options: helpers.filterableTableOptions
     }
-    respond_to do |format|
-      format.html
-      format.json { render json: @filterable_table_props }
-    end
   end
 
   def list
     @tools = Tool.paginate(params.to_json)
 
     render json: @tools
+  end
+
+  def terms
+  end
+
+  def about
   end
 end
