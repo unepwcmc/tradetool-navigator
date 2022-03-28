@@ -37,7 +37,7 @@ class Tool < ApplicationRecord
     show_in_modal: true
 
   table_attr :url,
-    title: 'Resource',
+    title: 'URL',
     type: 'single',
     show_in_table: true,
     show_in_modal: true
@@ -52,7 +52,7 @@ class Tool < ApplicationRecord
     title: 'Partners',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: false
   
   table_attr :developers,
     title: 'Developers',
@@ -79,7 +79,7 @@ class Tool < ApplicationRecord
     filter_on: true,
     type: 'multiple',
     show_in_table: true,
-    show_in_modal: true
+    show_in_modal: false
 
   table_attr :descriptions,
     title: 'Description',
@@ -91,7 +91,7 @@ class Tool < ApplicationRecord
     title: 'Country',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: false
   
   table_attr :spatial_scale,
     title: 'Spatial Scale',
@@ -104,7 +104,7 @@ class Tool < ApplicationRecord
     title: 'Update frequency',
     type: 'single',
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: false
   
   table_attr :users,
     title: 'Intended users',
