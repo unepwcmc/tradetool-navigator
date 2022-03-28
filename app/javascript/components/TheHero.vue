@@ -12,9 +12,9 @@
         />
       </a>
       <div class="flex space-x-10 items-center">
-        <a href="/">Home</a>
-        <a href="/terms-conditions">Terms and conditions</a>
         <a href="/about">About</a>
+        <a href="/glossary">Glossary</a>
+        <a href="/terms-conditions">Terms and conditions</a>
         <a
         :href="logos.tradehub.link"
         :title="logos.tradehub.text"

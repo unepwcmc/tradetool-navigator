@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   
   get '/about', to: 'pages#about', as: :about
   get '/terms-conditions', to: 'pages#terms', as: :termsAndConditions
+  get '/glossary', to: 'pages#glossary', as: :glossary
 
   mount WcmcComponents::Engine, at: "/tools", as: 'tools_table'
 

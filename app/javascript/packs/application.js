@@ -7,6 +7,7 @@ import '../stylesheets/application.scss';
 import PageHome from '../components/PageHome.vue'
 import TermsAndConditions from '../components/TermsAndConditions.vue'
 import About from '../components/About.vue'
+import Glossary from '../components/Glossary.vue'
 
 Vue.config.productionTip = false
 Vue.use(FilterableTable, { store })
@@ -28,7 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
       components: {
         PageHome,
         TermsAndConditions,
-        About
+        About,
+        Glossary
       }
     })
   }
