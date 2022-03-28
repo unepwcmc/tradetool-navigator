@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="bg-black rounded-full h-1 mx-2 p-1 mt-2" />
+    <div class="bg-white rounded-full h-1 mx-2 p-1 mt-2" />
       <slot />
   </div>
 </template>

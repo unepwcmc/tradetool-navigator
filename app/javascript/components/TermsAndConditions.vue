@@ -1,24 +1,24 @@
 <template>
-  <div class="p-10">
-    <h1>Terms and Conditions of Use of Trade Tools Navigator</h1>
+  <div class="p-10 text-white bg-teal">
+    <h1 class="pb-4">Terms and Conditions of Use of Trade Tools Navigator</h1>
     <p>
       Access to the Trade Tools Navigator Site or data and other content within
       the Site, including Materials and Third-Party Data, are provided subject
       to the following Terms and Conditions.
-    </p>
+    </p><br>
     <p>
       PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY. IF YOU DO NOT AGREE TO
       ANY OF THE TERMS AND CONDITIONS, DO NOT DOWNLOAD INFORMATION FROM THE
       SITE. BY DOING SO YOU AGREE TO ACCEPT AND COMPLY WITH THE TERMS AND
       CONDITIONS BELOW.
-    </p>
+    </p><br>
     <h3>Copyright</h3>
     <p>© 2021 UN Environment Programme (UNEP)</p>
     <br />
     <ol class="first">
-      <li class="gro">
-        <span class="text-2xl">Definitions</span>
-        <ol class="bg-transparent">
+      <li class="nested">
+        <span class="text-2xl py-4">Definitions</span>
+        <ol class="py-4">
           For the purposes of these Terms and Conditions the following
           definitions are used:
           <li>
@@ -55,9 +55,9 @@
           </li>
         </ol>
       </li>
-      <li class="gro">
-        Use of this Site is governed by the following terms and conditions:
-        <ol>
+      <li class="nested">
+        <span class="text-2xl">Use of this Site is governed by the following terms and conditions:</span>
+        <ol class="py-4">
           <li>
             UNEP-WCMC maintains the Site on behalf of the GCRF UKRI Trade,
             Development and the Environment Hub and as a courtesy to those who
@@ -90,37 +90,42 @@
         </ol>
       </li>
       <li>
-        Attribution <br />As a condition of using any data from this website you
-        ensure that the following citation or acknowledgement shall be
-        reproduced in any publication or analysis involving the GCRF Trade,
-        Development and the Environment Hub - Trade Tools Navigator in any
-        derived form or format: GCRF Trade, Development and the Environment Hub
-        - Project number ES/S008160/1 (year). Trade Tools Navigator [On-line],
-        [insert month/year of the version accessed], Cambridge, UK: UNEP-WCMC.
-        Available at: https://tools.tradehub.earth/ All Third-Party Data should
-        be cited according to their respective terms and conditions.
+        <span class="text-2xl">Attribution</span>
+        <div class="py-4">
+          As a condition of using any data from this website you
+          ensure that the following citation or acknowledgement shall be
+          reproduced in any publication or analysis involving the GCRF Trade,
+          Development and the Environment Hub - Trade Tools Navigator in any
+          derived form or format: GCRF Trade, Development and the Environment Hub
+          - Project number ES/S008160/1 (year). Trade Tools Navigator [On-line],
+          [insert month/year of the version accessed], Cambridge, UK: UNEP-WCMC.
+          Available at: https://tools.tradehub.earth/ All Third-Party Data should
+          be cited according to their respective terms and conditions.
+        </div>
       </li>
-      <li>
-        Privacy <br />The General Data Protection Regulation (GDPR) is a
-        regulation in European Union law on data protection and privacy for all
-        individuals within the European Union. It came into force on 25th May
-        2018. The GDPR aims primarily to give control to citizens and residents
-        over their personal data and to simplify the regulatory environment for
-        international business by unifying the regulation within the EU. It
-        became enforceable on 25th May 2018, and is incorporated into the Data
-        Protection Act 2008. At UNEP-WCMC, we are committed to being transparent
-        about the use of the User’s personal data. The User’s data will be
-        stored securely and will not be sold to third parties. The User’s data
-        will not be shared with third parties except as outlined below. The
-        purpose of this information is to describe how we collect and use
-        personal data during the User’s engagement with the Site. For more
-        information on how UNEP-WCMC handles data, please see the
-        UNEP-WCMC Terms and Conditions. We take the User’s privacy very
-        seriously and only store data where necessary to improve usability of
-        the Site, tailor information to the User’s organisation, and to track
-        impact for ourselves and our partners. To request that your data is
-        deleted from our servers, please contact us on trade@unep-wcmc.org When
-        the User uses the Site we will process the User’s personal data to:
+      <li class="nested">
+        <span class="text-2xl">Privacy</span>
+        <div class="py-4">
+          The General Data Protection Regulation (GDPR) is a
+          regulation in European Union law on data protection and privacy for all
+          individuals within the European Union. It came into force on 25th May
+          2018. The GDPR aims primarily to give control to citizens and residents
+          over their personal data and to simplify the regulatory environment for
+          international business by unifying the regulation within the EU. It
+          became enforceable on 25th May 2018, and is incorporated into the Data
+          Protection Act 2008. At UNEP-WCMC, we are committed to being transparent
+          about the use of the User’s personal data. The User’s data will be
+          stored securely and will not be sold to third parties. The User’s data
+          will not be shared with third parties except as outlined below. The
+          purpose of this information is to describe how we collect and use
+          personal data during the User’s engagement with the Site. For more
+          information on how UNEP-WCMC handles data, please see the
+          UNEP-WCMC Terms and Conditions. We take the User’s privacy very
+          seriously and only store data where necessary to improve usability of
+          the Site, tailor information to the User’s organisation, and to track
+          impact for ourselves and our partners. To request that your data is
+          deleted from our servers, please contact us on trade@unep-wcmc.org When
+          the User uses the Site we will process the User’s personal data to:
 
         <Disc
           ><div>
@@ -144,7 +149,8 @@
             types.
           </div></Disc
         >
-        <ol>
+        </div>
+        <ol class="py-4">
           <li>
             Cookies <br />
             We use cookies to help identify your computer so that we can
@@ -183,8 +189,8 @@
         </ol>
       </li>
       <li>
-        Disclaimers
-        <ol>
+        <span class="text-2xl">Disclaimers</span>
+        <ol class="nested py-4">
           <li>
             The contents of this Website do not necessarily reflect the view or
             policies of UNEP, WCMC or GCRF UKRI Trade, Development and, the
@@ -249,25 +255,34 @@
         </ol>
       </li>
       <li>
-        Preservation of immunities Nothing herein shall constitute or be
-        considered a limitation upon or a waiver of the privileges and
-        immunities of the United Nations, which are specifically reserved.
+        <span class="text-2xl">Preservation of immunities</span>
+        <div class="py-4">
+          Nothing herein shall constitute or be
+          considered a limitation upon or a waiver of the privileges and
+          immunities of the United Nations, which are specifically reserved.
+        </div>
       </li>
       <li>
-        General UNEP reserves its exclusive right in its sole discretion to
-        alter, limit or discontinue the Site or any Materials. UNEP shall have
-        no obligation to take the needs of any User into consideration in
-        connection therewith. UNEP reserves the right to deny in its sole
-        discretion any User access to this Site or any portion thereof without
-        notice.
+        <span class="text-2xl">General</span>
+        <div class="py-4">
+          UNEP reserves its exclusive right in its sole discretion to
+          alter, limit or discontinue the Site or any Materials. UNEP shall have
+          no obligation to take the needs of any User into consideration in
+          connection therewith. UNEP reserves the right to deny in its sole
+          discretion any User access to this Site or any portion thereof without
+          notice.
+        </div>
       </li>
       <li>
-        Changes to These Terms and Conditions UNEP reserves the right to vary
-        these Terms and Conditions from time to time without notice. Therefore,
-        please ensure that you read these Terms and Conditions each time you use
-        or download materials. By accessing and/or downloading Materials, you
-        signify your acceptance of the most recent version of these Terms and
-        Conditions in full.
+        <span class="text-2xl">Changes to These Terms and Conditions</span>
+        <div class="py-4">
+          UNEP reserves the right to vary
+          these Terms and Conditions from time to time without notice. Therefore,
+          please ensure that you read these Terms and Conditions each time you use
+          or download materials. By accessing and/or downloading Materials, you
+          signify your acceptance of the most recent version of these Terms and
+          Conditions in full.
+        </div>
       </li>
     </ol>
   </div>
@@ -296,14 +311,10 @@
   ol li:before {
     content: counters(item, ". ") ". ";
     counter-increment: item;
-    font-size: 40px;
+    font-size: 1.875rem;
   }
 
-  /* li.sqaredotlist {
-    list-style-type: square;
-  } */
-
-  .gro li:before {
-    font-size: 16px;
+  .nested li:before {
+    font-size: 1rem;
   }
 </style>
