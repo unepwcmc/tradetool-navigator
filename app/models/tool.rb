@@ -75,7 +75,7 @@ class Tool < ApplicationRecord
     show_in_modal: true
 
   table_attr :keywords,
-    title: 'Keywords',
+    title: 'Commodity focus ',
     filter_on: true,
     type: 'multiple',
     show_in_table: true,
@@ -94,7 +94,7 @@ class Tool < ApplicationRecord
     show_in_modal: false
   
   table_attr :spatial_scale,
-    title: 'Spatial Scale',
+    title: 'Scope',
     filter_on: true,
     type: 'single',
     show_in_table: false,
