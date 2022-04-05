@@ -19,6 +19,8 @@
 	import TheTextBlock from './TheTextBlock.vue'
 	import TheFooter from './TheFooter.vue'
 	import logos from '../data/logos.js'
+	import { createNamespacedHelpers } from 'vuex'
+	const { mapActions, mapGetters } = createNamespacedHelpers('filterableTable')
 
 	export default {
 		name: 'Home',
@@ -27,6 +29,14 @@
 			TheTextBlock,
 			TheFooter,
 			TheHero
+		},
+
+		created() {
+			this.$root.$on('openModal', this.updateModalTitle)
+		},
+
+		computed: {
+			...mapGetters(['options', 'modalContent'])
 		},
 
 		props: {
@@ -43,6 +53,23 @@
 
 		data: () => ({
 			logos: logos
-		})
+		}),
+
+		methods: {
+			...mapActions(['updateOptions']),
+			updateModalTitle() {
+				const obj = {
+					tableId: 1,
+					options: {
+						...this.options(1),
+						modal: {
+							title: this.modalContent(1)[1].value
+						}
+					}
+				}
+				console.log('we are updating !!', this.modalContent(1))
+				this.updateOptions(obj)
+			}
+		}
 	}
 </script>
