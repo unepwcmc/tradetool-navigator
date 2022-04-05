@@ -27,6 +27,9 @@ class Tool < ApplicationRecord
   has_and_belongs_to_many :countries
   import_by countries: :name
 
+  has_and_belongs_to_many :spatial_scales
+  import_by spatial_scale: :name
+
   has_and_belongs_to_many :users
   import_by users: :name
 
@@ -93,10 +96,10 @@ class Tool < ApplicationRecord
     show_in_table: false,
     show_in_modal: false
   
-  table_attr :spatial_scale,
+  table_attr :spatial_scales,
     title: 'Scope',
     filter_on: true,
-    type: 'single',
+    type: 'multiple',
     show_in_table: false,
     show_in_modal: true
   
