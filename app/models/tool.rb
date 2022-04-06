@@ -28,7 +28,7 @@ class Tool < ApplicationRecord
   import_by countries: :name
 
   has_and_belongs_to_many :spatial_scales
-  import_by spatial_scale: :name
+  import_by spatial_scales: :name
 
   has_and_belongs_to_many :users
   import_by users: :name
@@ -48,7 +48,7 @@ class Tool < ApplicationRecord
   table_attr :organisations,
     title: 'Lead organisation',
     type: 'multiple',
-    show_in_table: true,
+    show_in_table: false,
     show_in_modal: true
   
   table_attr :partners,

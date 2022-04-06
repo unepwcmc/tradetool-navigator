@@ -9,7 +9,7 @@ module HomeHelper
         widths: [
           '1fr', 
           '2fr', 
-          '1fr', 
+          # '1fr',
           '1fr',
           '1fr', 
           '80px'

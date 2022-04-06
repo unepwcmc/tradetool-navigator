@@ -31,14 +31,6 @@
 			TheHero
 		},
 
-		created() {
-			this.$root.$on('openModal', this.updateModalTitle)
-		},
-
-		computed: {
-			...mapGetters(['options', 'modalContent'])
-		},
-
 		props: {
 			localeContent: {
 				type: Object
@@ -51,12 +43,22 @@
 			}
 		},
 
+		created() {
+			// this.updateColumnConfig()
+			this.$root.$on('openModal', this.updateModalTitle)
+		},
+
+		computed: {
+			...mapGetters(['options', 'modalContent'])
+		},
+
 		data: () => ({
 			logos: logos
 		}),
 
 		methods: {
 			...mapActions(['updateOptions']),
+
 			updateModalTitle() {
 				const obj = {
 					tableId: 1,
@@ -69,6 +71,20 @@
 				}
 				console.log('we are updating !!', this.modalContent(1))
 				this.updateOptions(obj)
+			},
+
+			updateColumnConfig() {
+				console.log('we are updating the cols !!')
+				const col = {
+					tableId: 1,
+					options: {
+						...this.options(1),
+						columns: {
+							widths: ['1fr', '1fr', '1fr', '1fr', '100px']
+						}
+					}
+				}
+				this.updateOptions(col)
 			}
 		}
 	}
