@@ -7,11 +7,11 @@ module HomeHelper
       fontFamily: 'Raleway, sans-serif',
       columns: {
         widths: [
-          '1fr', 
-          '1fr', 
           '1fr',
-          '1fr', 
-          '120px'
+          '2fr',
+          '1fr',
+          '1fr',
+          '80px'
         ], # Length = attributes.length + 1
       },
       download: {
