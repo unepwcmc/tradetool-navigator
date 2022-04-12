@@ -68,7 +68,7 @@
 						}
 					}
 				}
-				console.log('we are updating !!', this.modalContent(1))
+				console.log('we are updating !!', obj.options.modal.title)
 				this.updateOptions(obj)
 			}
 		}
