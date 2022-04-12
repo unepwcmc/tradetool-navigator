@@ -8,11 +8,10 @@ module HomeHelper
       columns: {
         widths: [
           '1fr', 
-          '2fr', 
-          # '1fr',
+          '1fr', 
           '1fr',
           '1fr', 
-          '80px'
+          '120px'
         ], # Length = attributes.length + 1
       },
       download: {

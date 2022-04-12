@@ -82,7 +82,7 @@ class Tool < ApplicationRecord
     filter_on: true,
     type: 'multiple',
     show_in_table: true,
-    show_in_modal: false
+    show_in_modal: true
 
   table_attr :descriptions,
     title: 'Description',
