@@ -53,7 +53,6 @@ module HomeHelper
         borderColor: TEAL
       },
       modal: {
-        title: 'Initiative',
         closeBgColor: LIME,
         closeBorderRadius: '2px',
         crossFill: '#F7FAFB',

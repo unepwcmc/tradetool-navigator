@@ -23,8 +23,6 @@
 	const { mapActions, mapGetters } = createNamespacedHelpers('filterableTable')
 
 	export default {
-		name: 'Home',
-
 		components: {
 			TheTextBlock,
 			TheFooter,
@@ -58,18 +56,26 @@
 		methods: {
 			...mapActions(['updateOptions']),
 
-			updateModalTitle() {
-				const obj = {
-					tableId: 1,
+			updateModalTitle({ tableId }) {
+				const modalContent = this.modalContent(tableId)
+				const modalTitle = modalContent.find(contentItem => {
+					return contentItem.name === 'name'
+				}).value
+
+				const oldOptions = this.options(tableId)
+				
+				const optionsConfiguration = {
+					tableId,
 					options: {
-						...this.options(1),
+						...oldOptions,
 						modal: {
-							title: this.modalContent(1)[1].value
+							...oldOptions.modal,
+							title: modalTitle,
 						}
 					}
 				}
-				console.log('we are updating !!', this.modalContent(1))
-				this.updateOptions(obj)
+
+				this.updateOptions(optionsConfiguration)
 			}
 		}
 	}
