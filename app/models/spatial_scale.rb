@@ -1,0 +1,2 @@
+class SpatialScale < ApplicationRecord
+end
