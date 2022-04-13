@@ -7,11 +7,11 @@ module HomeHelper
       fontFamily: 'Raleway, sans-serif',
       columns: {
         widths: [
-          '1fr', 
-          '2fr', 
-          '1fr', 
           '1fr',
-          '1fr', 
+          '2fr',
+          '1fr',
+          '1fr',
+          '1fr',
           '80px'
         ], # Length = attributes.length + 1
       },
@@ -54,6 +54,7 @@ module HomeHelper
         borderColor: TEAL
       },
       modal: {
+        title: 'Initiative',
         closeBgColor: LIME,
         closeBorderRadius: '2px',
         crossFill: '#F7FAFB',
