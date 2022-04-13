@@ -52,5 +52,6 @@ RAILS_ENV=staging bundle exec rake db:drop
 RAILS_ENV=staging bundle exec rake db:create
 RAILS_ENV=staging bundle exec rake db:migrate
 RAILS_ENV=staging bundle exec rake import:tools['tools-navigator.csv']
+# on zsh, you may have to escape the brackets e.g.: \['tools-navigator.csv'\]
 
 ```
