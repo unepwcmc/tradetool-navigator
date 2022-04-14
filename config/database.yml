@@ -9,7 +9,6 @@ default: &default
   encoding: utf-8
   pool: 5
   username: postgres
-  password:
 
 
 # Warning: The database defined as "test" will be erased and
