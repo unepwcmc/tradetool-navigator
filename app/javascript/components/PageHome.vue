@@ -1,58 +1,44 @@
 <template>
-  <div class="min-h-screen w-full grid font-sans text-xs sm:text-sm md:text-base">
-    <TheHero
-      :localeContent="localeContent.hero"
-      :logos="logos"
-    />
-    <TheTextBlock
-      :background="'bg-ash'"
-      :color="'black'"
-      :text="textAttribution"
-    />
-    <slot />
-    <TheTextBlock
-      :background="'bg-ash-light'"
-      :text="textFeedback"
-    /> 
-    <TheFooter 
-      :logos="logos"
-    />
-  </div>  
+	<div
+		class="min-h-screen w-full grid font-sans text-xs sm:text-sm md:text-base"
+	>
+		<TheHero :localeContent="localeContent.hero" :logos="logos" />
+		<slot />
+		<TheFooter :logos="logos" />
+	</div>
 </template>
 
 <script>
-import TheHero from './TheHero.vue'
-import TheTextBlock from './TheTextBlock.vue'
-import TheFooter from './TheFooter.vue'
-import logos from '../data/logos.js'
+	import TheHero from './TheHero.vue'
+	import TheTextBlock from './TheTextBlock.vue'
+	import TheFooter from './TheFooter.vue'
+	import logos from '../data/logos.js'
 
-export default {
-  name: 'Home',
+	export default {
+		name: 'Home',
 
-  components: {
-    TheTextBlock, 
-    TheFooter,
-    TheHero,
-  },
+		components: {
+			TheTextBlock,
+			TheFooter,
+			TheHero
+		},
 
-  props: {
-    localeContent: {
-      type: Object
-    },
-    textFeedback: {
-      type: String
-    },
-    textAttribution: {
-      type: String
-    }
-  },
+		props: {
+			localeContent: {
+				type: Object
+			},
+			textFeedback: {
+				type: String
+			},
+			textAttribution: {
+				type: String
+			}
+		},
 
-  data: () => ({
-    logos: logos
-  }),
+		data: () => ({
+			logos: logos
+		}),
 
-  methods: {
-
-  }
-}
+		methods: {}
+	}
 </script>
