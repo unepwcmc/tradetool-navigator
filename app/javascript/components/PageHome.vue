@@ -17,7 +17,6 @@ const { mapActions, mapGetters } = createNamespacedHelpers('filterableTable')
 
 export default {
   components: {
-    TheTextBlock,
     TheFooter,
     TheHero
   },
