@@ -1004,15 +1004,16 @@
   resolved "https://registry.npmjs.org/@types/q/-/q-1.5.5.tgz#75a2a8e7d8ab4b230414505d92335d1dcb53a6df"
   integrity sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==
 
-"@unep-wcmc/wcmc-components@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/@unep-wcmc/wcmc-components/-/wcmc-components-1.1.0.tgz#6c1f9e52904d4feba950c0c1c3799a3a3b5787da"
-  integrity sha512-uPlvjqGZaPGLax0u/F8EDZswK3MqZdQ+STXcjyhCNYEUAHblopuiYAPxRie0IJmg1hxllUkWiiQZEc+R2rdBoA==
+"@unep-wcmc/wcmc-components@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/@unep-wcmc/wcmc-components/-/wcmc-components-2.0.0.tgz#ed157e3c362c593c8f86046b37cc8a8b52bcb1ef"
+  integrity sha512-jG/DrCeHTf7WTLnYTZMe/vgbDRw1sQWTb/695pYXs/da9Wshg87pwqBrn7uiV6APbYIdYkKXakmAqBul8gZUKw==
   dependencies:
     axios "^0.21.1"
     core-js "^3.6.5"
     es6-promise "^4.2.8"
     lodash "^4.17.21"
+    portal-vue "^2.1.7"
     sass "^1.32.6"
     sass-loader "^10.1.1"
     style-resources-loader "^1.4.1"
@@ -5598,6 +5599,11 @@ pnp-webpack-plugin@^1.7.0:
   integrity sha512-2Rb3vm+EXble/sMXNSu6eoBx8e79gKqhNq9F5ZWW6ERNCTE/Q0wQNne5541tE5vKjfM8hpNCYL+LGc1YTfI0dg==
   dependencies:
     ts-pnp "^1.1.6"
+
+portal-vue@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.npmjs.org/portal-vue/-/portal-vue-2.1.7.tgz#ea08069b25b640ca08a5b86f67c612f15f4e4ad4"
+  integrity sha512-+yCno2oB3xA7irTt0EU5Ezw22L2J51uKAacE/6hMPMoO/mx3h4rXFkkBkT4GFsMDv/vEe8TNKC3ujJJ0PTwb6g==
 
 portfinder@^1.0.26:
   version "1.0.28"
