@@ -3,20 +3,13 @@
     class="min-h-screen w-full grid font-sans text-xs sm:text-sm md:text-base"
   >
     <TheHero :localeContent="localeContent.hero" :logos="logos" />
-    <TheTextBlock
-      :background="'bg-ash'"
-      :color="'black'"
-      :text="textAttribution"
-    />
     <slot />
-    <TheTextBlock :background="'bg-ash-light'" :text="textFeedback" />
     <TheFooter :logos="logos" />
   </div>
 </template>
 
 <script>
 import TheHero from './TheHero.vue'
-import TheTextBlock from './TheTextBlock.vue'
 import TheFooter from './TheFooter.vue'
 import logos from '../data/logos.js'
 import { createNamespacedHelpers } from 'vuex'

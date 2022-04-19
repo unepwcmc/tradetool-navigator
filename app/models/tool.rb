@@ -48,7 +48,7 @@ class Tool < ApplicationRecord
   table_attr :organisations,
     title: 'Lead organisation',
     type: 'multiple',
-    show_in_table: false,
+    show_in_table: true,
     show_in_modal: true
   
   table_attr :partners,
