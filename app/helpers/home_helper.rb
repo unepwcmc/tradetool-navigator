@@ -17,7 +17,7 @@ module HomeHelper
       download: {
         bgColor: LIME,
         bgColorHover: TEAL,
-        text: 'Download'
+        text: 'DOWNLOAD CSV'
       },
       filters: {
         buttonApply: {
