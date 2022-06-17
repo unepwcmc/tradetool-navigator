@@ -53,6 +53,7 @@ module HomeHelper
         borderColor: TEAL
       },
       modal: {
+        bulletDisplay: false,
         closeBgColor: LIME,
         closeBorderRadius: '2px',
         crossFill: '#F7FAFB',
@@ -73,7 +74,7 @@ module HomeHelper
         bgColor2: '#FEFFFF',
         bgColorMobile: '#F7FAFB',
         borderColor: 'transparent',
-        buttonHoverColor: TEAL,
+        buttonHoverColor: LIME,
       }
     }.to_json
   end

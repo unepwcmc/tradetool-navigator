@@ -1,7 +1,16 @@
 <template>
   <div class="py-10 flex justify-center">
     <div class="w-3/5">
+      <p class="">
+      <!-- <p class="text-center"> -->
+        The Trade Tools Navigator is under continuous review. We are working on
+        updating this website, and would welcome comments and suggestions on how
+        best to improve it. If you have any suggestions or new sites and tools
+        to add or review, please email:  <br /> <p class="text-blue-500 text-center">trade@unep-wcmc.org</p>
+      </p>
+      <br />
       <h1>About</h1>
+      <br />
       <br />
       <p>
         The Trade Tools Navigator seeks to bring together existing initiatives
@@ -21,7 +30,7 @@
         <li>Impacts (direct and indirect) – especially negative impacts</li>
         <li>Drivers of impact</li>
         <li>Spatialised information</li>
-        <li>Trade flows or Maps Map or list trade flows</li>
+        <li>Trade flows or maps or list trade flows</li>
         <li>Solutions (including frameworks, best practices)</li>
       </ul>
       <br />
