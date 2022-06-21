@@ -20,6 +20,12 @@ module HomeHelper
         text: 'DOWNLOAD CSV'
       },
       filters: {
+        optionToPinAtTheTop: [
+          {
+            filterName: 'Commodity focus',
+            option: 'Multiple'
+          }
+        ],
         buttonApply: {
           borderColor: LIME,
           borderWidth: '1px',
