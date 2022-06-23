@@ -2,7 +2,6 @@
   <div class="py-10 flex justify-center">
     <div class="w-3/5">
       <p class="">
-      <!-- <p class="text-center"> -->
         The Trade Tools Navigator is under continuous review. We are working on
         updating this website, and would welcome comments and suggestions on how
         best to improve it. If you have any suggestions or new sites and tools
