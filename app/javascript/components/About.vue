@@ -30,7 +30,7 @@
         <li>Impacts (direct and indirect) – especially negative impacts</li>
         <li>Drivers of impact</li>
         <li>Spatialised information</li>
-        <li>Trade flows or maps or list trade flows</li>
+        <li>Trade flows</li>
         <li>Solutions (including frameworks, best practices)</li>
       </ul>
       <br />
