@@ -1,7 +1,7 @@
 <template>
-  <div class="p-14 bg-teal text-white">
-    <table class="table-auto border-separate border border-teal-light">
-      <thead class="bg-teal-light">
+  <div class="py-10 flex justify-center">
+    <table class="table-auto border-separate border border-teal-light w-3/5">
+      <thead class="bg-ash">
         <tr>
           <th>Term</th>
           <th>Definition</th>

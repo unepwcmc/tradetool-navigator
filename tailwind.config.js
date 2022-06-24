@@ -34,7 +34,6 @@ module.exports = {
         "hero-pattern-1": "url('../images/hero-pattern-1.jpeg')",
         "hero-pattern-2": "url('../images/hero-pattern-2.jpeg')",
         "legend-icon": "url('../images/LegendIcon.svg')",
-        
         "data-platform": "url('../images/DigitalPlatforms.svg')",
         "data-portal": "url('../images/DataPortal.svg')",
         "data-services": "url('../images/DataServices.svg')",
@@ -49,6 +48,9 @@ module.exports = {
         "other---initiative-organisation": "url('../images/InitativeOrganisation.svg')",
         "other---repository": "url('../images/Repository.svg')",
         "visualisation---dashboard": "url('../images/VisualisationDashboard.svg')",
+        "statistics": "url('../images/Statistics.svg')",
+        "initiative-organisation": "url('../images/InitativeOrganisation.svg')",
+        "repository": "url('../images/Repository.svg')"
       },
       minHeight: (theme) => ({
         ...theme('spacing'),

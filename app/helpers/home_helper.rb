@@ -17,9 +17,15 @@ module HomeHelper
       download: {
         bgColor: LIME,
         bgColorHover: TEAL,
-        text: 'Download'
+        text: 'DOWNLOAD CSV'
       },
       filters: {
+        optionToPinAtTheTop: [
+          {
+            filterName: 'Commodity focus',
+            option: 'Multiple'
+          }
+        ],
         buttonApply: {
           borderColor: LIME,
           borderWidth: '1px',
@@ -53,6 +59,7 @@ module HomeHelper
         borderColor: TEAL
       },
       modal: {
+        bulletDisplay: false,
         closeBgColor: LIME,
         closeBorderRadius: '2px',
         crossFill: '#F7FAFB',
@@ -73,7 +80,7 @@ module HomeHelper
         bgColor2: '#FEFFFF',
         bgColorMobile: '#F7FAFB',
         borderColor: 'transparent',
-        buttonHoverColor: TEAL,
+        buttonHoverColor: LIME,
       }
     }.to_json
   end
