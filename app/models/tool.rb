@@ -37,37 +37,43 @@ class Tool < ApplicationRecord
     title: 'Name',
     type: 'single',
     show_in_table: true,
-    show_in_modal: true
+    show_in_modal: true,
+    show_in_csv: true
 
   table_attr :url,
     title: 'URL',
     type: 'single',
     show_in_table: true,
-    show_in_modal: true
+    show_in_modal: true,
+    show_in_csv: true
     
   table_attr :organisations,
     title: 'Lead organisation',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: true,
+    show_in_csv: true
   
   table_attr :partners,
     title: 'Partners',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: false
+    show_in_modal: false,
+    show_in_csv: false
   
   table_attr :developers,
     title: 'Developers',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: false
+    show_in_modal: false,
+    show_in_csv: false
 
   table_attr :donors,
     title: 'Donors',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: false
+    show_in_modal: false,
+    show_in_csv: false
 
   table_attr :typologies,
     title: 'Typology',
@@ -75,57 +81,66 @@ class Tool < ApplicationRecord
     legend_on: true,
     type: 'multiple',
     show_in_table: true,
-    show_in_modal: true
+    show_in_modal: true,
+    show_in_csv: true
 
   table_attr :keywords,
     title: 'Commodity focus ',
     filter_on: true,
     type: 'multiple',
     show_in_table: true,
-    show_in_modal: true
+    show_in_modal: true,
+    show_in_csv: true
 
   table_attr :descriptions,
     title: 'Description',
     type: 'single',
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: true,
+    show_in_csv: true
 
   table_attr :countries,
     title: 'Country',
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: false
+    show_in_modal: false,
+    show_in_csv: false
   
   table_attr :spatial_scales,
     title: 'Scope',
     filter_on: true,
     type: 'multiple',
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: true,
+    show_in_csv: true
   
   table_attr :frequncies,
     title: 'Update frequency',
     type: 'single',
     show_in_table: false,
-    show_in_modal: false
+    show_in_modal: false,
+    show_in_csv: true
   
   table_attr :users,
     title: 'Intended users',
     type: 'multiple',
     filter_on: true, 
     show_in_table: false,
-    show_in_modal: true
+    show_in_modal: true,
+    show_in_csv: true
   
   table_attr :contacts,
     title: 'Country',
     type: 'single',
     show_in_table: false,
-    show_in_modal: false
+    show_in_modal: false,
+    show_in_csv: false
   
   table_attr :tool_id,
     title: 'Unique ID',
     type: 'single',
     show_in_table: false,
-    show_in_modal: false
+    show_in_modal: false,
+    show_in_csv: false
   
 end

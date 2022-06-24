@@ -43,7 +43,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Filterable Table
 # gem 'wcmc_components', path: '../web-components/wcmc_components'
-gem 'wcmc_components', '~> 0.2.0', source: 'https://gem-server.unep-wcmc.org/'
+gem 'wcmc_components', '~> 0.3.0', source: 'https://gem-server.unep-wcmc.org/'
 gem 'will_paginate', '~> 3.0'
 
 group :development, :test do
