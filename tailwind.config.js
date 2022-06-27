@@ -50,6 +50,9 @@ module.exports = {
         "visualisation---dashboard": "url('../images/VisualisationDashboard.svg')",
         "statistics": "url('../images/Statistics.svg')",
         "initiative-organisation": "url('../images/InitativeOrganisation.svg')",
+        "dataset": "url('../images/Dataset.svg')",
+        "software": "url('../images/Software.svg')",
+        "dashboard": "url('../images/Dashboard.svg')",
         "repository": "url('../images/Repository.svg')"
       },
       minHeight: (theme) => ({
