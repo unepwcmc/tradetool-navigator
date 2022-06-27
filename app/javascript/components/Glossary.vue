@@ -177,7 +177,7 @@
           </td>
         </tr>
         <tr>
-          <td class="border border-teal-light pl-2">initiative/ organisation</td>
+          <td class="border border-teal-light pl-2">Initiative/ organisation</td>
           <td class="border border-teal-light pl-2">
             <p>
               Often mistaken as platforms, initiatives provide details on the
