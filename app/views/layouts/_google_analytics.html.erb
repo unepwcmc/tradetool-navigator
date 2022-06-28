@@ -1,8 +1,8 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HP4X05RVXV"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%= Rails.application.credentials.config.dig(Rails.env.to_sym, :ga, :tracking_code) %>"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag()
-gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-gtag('config', 'G-HP4X05RVXV');
+  gtag('config', '<%= Rails.application.credentials.config.dig(Rails.env.to_sym, :ga, :tracking_code) %>');
 </script>
