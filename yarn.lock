@@ -1004,10 +1004,10 @@
   resolved "https://registry.npmjs.org/@types/q/-/q-1.5.5.tgz#75a2a8e7d8ab4b230414505d92335d1dcb53a6df"
   integrity sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==
 
-"@unep-wcmc/wcmc-components@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@unep-wcmc/wcmc-components/-/wcmc-components-2.1.0.tgz#236efba94073e16390d6b83cc5063dcaa17095f0"
-  integrity sha512-44j/KaR2sxDQpYoVT8kzVeUBaazbvRGQgZLILnJScQM9kps/t7Nj6Hy04swRTWGa4GVPL8bGgLm6Ju0JyizN5Q==
+"@unep-wcmc/wcmc-components@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.npmjs.org/@unep-wcmc/wcmc-components/-/wcmc-components-2.2.2.tgz#7b28c43bcdfde2f336a539d4ce89e94322727edd"
+  integrity sha512-9HnwMlp17qAuJL10f51ZTUJJ5TAg1EWZWxcZhi3hmpuXvmqeZOFZMc8Otl8lkaPYB+HBIbcgAhQ408hOPdXxHg==
   dependencies:
     axios "^0.21.1"
     core-js "^3.6.5"
