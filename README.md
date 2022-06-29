@@ -28,18 +28,32 @@ bundle exec rake import:tools['filename.csv']
 
 bundle exec rails s
 ```
-- new CSV download
+- new CSV import
 
 ```
 bundle exec rake db:reset
 bundle exec rake import:tools['tools-navigator.csv']
 ```
+
 - Install JS dependencies and run webpack
 
 ```
 yarn install
 bin/webpack-dev-server
 ```
+
+### CSV download configuration
+
+In order to choose if you want a column to be in the CSV download (when the user click `DOWNLOAD CSV`) the property `show_in_csv` in the tool model must be set. For intance, in the `tool.rb` file you must set the property to `true` if you want to have the url in the CSV download and `false` otherwise.
+```
+table_attr :url,
+    title: 'URL',
+    type: 'single',
+    show_in_table: true,
+    show_in_modal: true,
+    show_in_csv: `true` or `false`
+```
+
 ### Deployment
 
 `bundle exec cap staging deploy`
