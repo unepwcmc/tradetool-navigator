@@ -1,7 +1,7 @@
 <template>
   <div class="py-10 flex justify-center">
     <div class="w-3/5">
-      <h1 class="pb-4">Terms and Conditions of Use of Trade Tools Navigator</h1>
+      <h1 class="text-2xl pb-4">Terms and Conditions of Use of Trade Tools Navigator</h1>
       <p>
         Access to the Trade Tools Navigator Site or data and other content
         within the Site, including Materials and Third-Party Data, are provided
