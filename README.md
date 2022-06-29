@@ -44,14 +44,14 @@ bin/webpack-dev-server
 
 ### CSV download configuration
 
-In order to choose if you want a column to be in the CSV download (when the user click `DOWNLOAD CSV`) the property `show_in_csv` in the tool model must be set. For intance, in the `tool.rb` file you must set the property to `true` if you want to have the url in the CSV download and `false` otherwise.
+In order to choose if you want a column (`table_attr`) to be in the CSV download (when the user click `DOWNLOAD CSV`) the property `show_in_csv` in the `table_attr` must be set. For intance, in the `tool.rb` file you must set the property to `true` if you want to have the url column in the CSV download and `false` otherwise.
 ```
 table_attr :url,
     title: 'URL',
     type: 'single',
     show_in_table: true,
     show_in_modal: true,
-    show_in_csv: `true` or `false`
+    show_in_csv: true or false
 ```
 
 ### Deployment
