@@ -15,10 +15,6 @@
     </div>
     <div class="py-10 flex justify-center">
       <div class="w-3/5">
-        <br />
-        <h1>About</h1>
-        <br />
-        <br />
         <p>
           The Trade Tools Navigator seeks to bring together existing initiatives
           in one place to help users understand the impacts of production and

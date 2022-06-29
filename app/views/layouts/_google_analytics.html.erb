@@ -1,7 +1,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=<%= Rails.application.credentials.config.dig(Rails.env.to_sym, :ga, :tracking_code) %>"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag()
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', '<%= Rails.application.credentials.config.dig(Rails.env.to_sym, :ga, :tracking_code) %>');
