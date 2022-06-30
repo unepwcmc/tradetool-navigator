@@ -1,9 +1,16 @@
 document.addEventListener('turbolinks:load', function(event) {
   if (typeof gtag === 'function') {
-    gtag('config', '<%= Rails.application.credentials.config.dig(Rails.env.to_sym, :ga, :tracking_code) %>', {
+    gtag('config', 'G-XH7G86BZJB', {
       'page_location': event.data.url
       'page_path': event.srcElement.location.pathname,
       'page_title': event.srcElement.title
     })
   }
-}
+  if (typeof gtag_stage === 'function') {
+    gtag_stage('config', 'G-HP4X05RVXV', {
+      'page_location': event.data.url
+      'page_path': event.srcElement.location.pathname,
+      'page_title': event.srcElement.title
+    })
+  }
+})
