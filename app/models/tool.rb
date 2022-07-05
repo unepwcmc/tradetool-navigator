@@ -34,7 +34,7 @@ class Tool < ApplicationRecord
   import_by users: :name
 
   table_attr :name,
-    title: 'Name',
+    title: 'Initiative',
     type: 'single',
     show_in_table: true,
     show_in_modal: true,
