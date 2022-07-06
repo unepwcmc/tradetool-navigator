@@ -26,8 +26,8 @@
       class="
         w-full
         min-h-96
-        flex flex-col
-        items-center
+        flex
+        justify-center
         text-white
         bg-hero-pattern-1 bg-no-repeat bg-cover bg-left-center
         font-semibold
@@ -35,9 +35,18 @@
         py-6
         sm:py-16
       "
+      :class="{'flex-col items-center': localeContent.intro} "
     >
-      <h1 class="text-center my-10 w-3/5">{{ localeContent.title }}</h1>
-      <h3 class="mb-10 w-3/5">{{ localeContent.intro }}</h3>
+      <h1 
+        class="text-center self-center my-10 w-3/5"
+        v-text="localeContent.title"
+      />
+
+      <h3 
+        v-if="localeContent.intro"
+        class="mb-10 w-3/5"
+        v-text="localeContent.intro"
+      />
     </div>
   </header>
 </template>
