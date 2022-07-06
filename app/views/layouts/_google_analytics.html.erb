@@ -1,5 +1,6 @@
 <% if Rails.env.production? %>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XH7G86BZJB"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XH7G86BZJB"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -8,7 +9,8 @@
     gtag('config', 'G-XH7G86BZJB');
   </script>
 <% elsif Rails.env.staging?%>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HP4X05RVXV"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP4X05RVXV"></script>
+  
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag_stage(){dataLayer.push(arguments);}
