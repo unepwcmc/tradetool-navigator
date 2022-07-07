@@ -70,7 +70,7 @@ module HomeHelper
         buttonClass: 'legend-icon'
       },
       pagination: {
-        numberOfPageButtonsToShow: 7,
+        numberOfPageButtonsToShow: 9,
         buttonBorderRadius: '2px',
         buttonBgColor: LIME,
         textTitle: 'Showing',
