@@ -53,7 +53,8 @@ module.exports = {
         "dataset": "url('../images/Dataset.svg')",
         "software": "url('../images/Software.svg')",
         "dashboard": "url('../images/Dashboard.svg')",
-        "repository": "url('../images/Repository.svg')"
+        "repository": "url('../images/Repository.svg')",
+        "certification-scheme-standards": "url('../images/CertificationSchemeStandards.svg')"
       },
       minHeight: (theme) => ({
         ...theme('spacing'),
