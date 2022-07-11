@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+  <g id="Group_409" data-name="Group 409" transform="translate(1506 -2503)">
+    <g id="Group_371" data-name="Group 371" transform="translate(-2506 1268)">
+      <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(1000 1235)" fill="#fff" stroke="#707070" stroke-width="1">
+        <circle cx="21.5" cy="21.5" r="21.5" stroke="none"/>
+        <circle cx="21.5" cy="21.5" r="21" fill="none"/>
+      </g>
+      <g id="Group_27" data-name="Group 27" transform="translate(1063.014 1238.508)">
+        <g id="Group_26" data-name="Group 26" transform="translate(-46.541 12.773)">
+          <rect id="Rectangle_27" data-name="Rectangle 27" width="10.881" height="0.775" rx="0.387" transform="translate(0 0)"/>
+          <rect id="Rectangle_28" data-name="Rectangle 28" width="10.881" height="0.775" rx="0.387" transform="translate(0 2.222)"/>
+          <rect id="Rectangle_29" data-name="Rectangle 29" width="10.881" height="0.775" rx="0.387" transform="translate(0 4.445)"/>
+        </g>
+      </g>
+    </g>
+    <path id="_1904667_apple_computer_desktop_device_monitor_icon" data-name="1904667_apple_computer_desktop_device_monitor_icon" d="M18.63,0H1.078A1.078,1.078,0,0,0,0,1.078V13.7A1.078,1.078,0,0,0,1.078,14.78H6.928v4H4.465a.462.462,0,0,0,0,.924H15.242a.462.462,0,1,0,0-.924H12.779v-4H18.63A1.078,1.078,0,0,0,19.707,13.7V1.078A1.078,1.078,0,0,0,18.63,0ZM1.078.924H18.63a.154.154,0,0,1,.154.154V11.239H.924V1.078A.154.154,0,0,1,1.078.924Zm10.777,17.86h-4v-4h4Zm6.774-4.927H1.078A.154.154,0,0,1,.924,13.7v-1.54h17.86V13.7A.154.154,0,0,1,18.63,13.857Z" transform="translate(-1494 2515.666)"/>
+  </g>
+</svg>

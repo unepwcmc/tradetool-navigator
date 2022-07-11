@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+  <g id="Group_397" data-name="Group 397" transform="translate(1506 -3044)">
+    <g id="Group_386" data-name="Group 386" transform="translate(-2506 1809)">
+      <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(1000 1235)" fill="#fff" stroke="#707070" stroke-width="1">
+        <circle cx="21.5" cy="21.5" r="21.5" stroke="none"/>
+        <circle cx="21.5" cy="21.5" r="21" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_389" data-name="Group 389" transform="translate(-1 1)">
+      <g id="Ellipse_43" data-name="Ellipse 43" transform="translate(-1487 3053)" fill="#fff" stroke="#000" stroke-width="0.9">
+        <circle cx="3" cy="3" r="3" stroke="none"/>
+        <circle cx="3" cy="3" r="2.55" fill="none"/>
+      </g>
+      <g id="Ellipse_44" data-name="Ellipse 44" transform="translate(-1495 3067)" fill="#fff" stroke="#000" stroke-width="0.9">
+        <circle cx="3" cy="3" r="3" stroke="none"/>
+        <circle cx="3" cy="3" r="2.55" fill="none"/>
+      </g>
+      <g id="Ellipse_45" data-name="Ellipse 45" transform="translate(-1487 3067)" fill="#fff" stroke="#000" stroke-width="0.9">
+        <circle cx="3" cy="3" r="3" stroke="none"/>
+        <circle cx="3" cy="3" r="2.55" fill="none"/>
+      </g>
+      <g id="Ellipse_46" data-name="Ellipse 46" transform="translate(-1479 3067)" fill="#fff" stroke="#000" stroke-width="0.9">
+        <circle cx="3" cy="3" r="3" stroke="none"/>
+        <circle cx="3" cy="3" r="2.55" fill="none"/>
+      </g>
+      <path id="Path_827" data-name="Path 827" d="M-1484,3059v3.512h-8.353v4.892" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="0.7"/>
+      <path id="Path_828" data-name="Path 828" d="M-1484,3062.5h8v4.948" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="0.7"/>
+    </g>
+    <path id="Path_829" data-name="Path 829" d="M-1485,3063.269v4.83" transform="translate(0 0.231)" fill="none" stroke="#000" stroke-width="0.7"/>
+  </g>
+</svg>

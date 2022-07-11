@@ -2,13 +2,26 @@
   "name": "tradehub-navigator",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5",
+    "@rails/webpacker": "^5.3.0",
+    "@unep-wcmc/wcmc-components": "^2.2.3",
+    "autoprefixer": "^10",
+    "cookieconsent": "^3.1.1",
+    "css-loader": "^5",
+    "node-sass": "^5.0.0",
+    "postcss": "^8",
+    "postcss-loader": "^4",
+    "sass-loader": "^10",
+    "tailwindcss": "^2",
     "vue": "^2.6.12",
-    "vue-loader": "14.2.2",
+    "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
-    "vue-turbolinks": "^2.2.2"
+    "vue-turbolinks": "^2.2.2",
+    "vuex": "^3.6.2",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
+  "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "^3"
   }
 }

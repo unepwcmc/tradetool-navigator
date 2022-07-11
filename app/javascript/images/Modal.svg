@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+  <g id="Group_398" data-name="Group 398" transform="translate(1506 -2984)">
+    <g id="Group_378" data-name="Group 378" transform="translate(-2506 1749)">
+      <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(1000 1235)" fill="#fff" stroke="#707070" stroke-width="1">
+        <circle cx="21.5" cy="21.5" r="21.5" stroke="none"/>
+        <circle cx="21.5" cy="21.5" r="21" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_390" data-name="Group 390" transform="translate(0 -1)">
+      <g id="Rectangle_834" data-name="Rectangle 834" transform="translate(-1495 3004)" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="0.7">
+        <rect width="17" height="12" rx="0.5" stroke="none"/>
+        <rect x="0.35" y="0.35" width="16.3" height="11.3" rx="0.15" fill="none"/>
+      </g>
+      <g id="Rectangle_833" data-name="Rectangle 833" transform="translate(-1492 3001)" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="0.7">
+        <rect width="17" height="12" rx="0.5" stroke="none"/>
+        <rect x="0.35" y="0.35" width="16.3" height="11.3" rx="0.15" fill="none"/>
+      </g>
+      <g id="Rectangle_832" data-name="Rectangle 832" transform="translate(-1489 2998)" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="0.7">
+        <rect width="17" height="12" rx="0.5" stroke="none"/>
+        <rect x="0.35" y="0.35" width="16.3" height="11.3" rx="0.15" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

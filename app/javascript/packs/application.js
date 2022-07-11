@@ -1,26 +1,40 @@
-/* eslint no-console:0 */
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-//
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
-
-console.log('Hello World from Webpacker')
-
-import TurbolinksAdapter from 'vue-turbolinks'
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+// cookieconsent
+import 'cookieconsent'
+import 'cookieconsent/build/cookieconsent.min.css'
 import Vue from 'vue/dist/vue.esm'
-import App from '../app.vue'
+import store from '../store.js';
+import FilterableTable from '@unep-wcmc/wcmc-components'
+import '../stylesheets/application.scss';
+import PageHome from '../components/PageHome.vue'
+import TermsAndConditions from '../components/TermsAndConditions.vue'
+import About from '../components/About.vue'
+import Glossary from '../components/Glossary.vue'
 
-Vue.use(TurbolinksAdapter)
+Vue.config.productionTip = false
+Vue.use(FilterableTable, { store })
+// Vue.use(TurbolinksAdapter)
 
-document.addEventListener('turbolinks:load', () => {
-  const app = new Vue({
-    el: '#v-app',
-    data: {
-      message: "Can you say hello?"
-    },
-    components: { App }
-  })
+const images = require.context('../images', true)
+require('../stylesheets/application.scss')
+
+// document.addEventListener('turbolinks:load', () => {
+document.addEventListener('DOMContentLoaded', () => {
+  if(document.getElementById('v-app')) {
+    // new Vue({
+    //   render: h => h(PageHome),
+    // }).$mount('#v-app')
+
+    new Vue({
+      el: '#v-app',
+      store,
+      components: {
+        PageHome,
+        TermsAndConditions,
+        About,
+        Glossary
+      }
+    })
+  }
 })
