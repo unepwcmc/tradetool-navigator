@@ -33,49 +33,49 @@ class Tool < ApplicationRecord
   has_and_belongs_to_many :users
   import_by users: :name
 
-  table_attr :name,
+  table_attribute :name,
     title: 'Initiative',
     type: 'single',
     show_in_table: true,
     show_in_modal: true,
     show_in_csv: true
 
-  table_attr :url,
+  table_attribute :url,
     title: 'URL',
     type: 'single',
     show_in_table: true,
     show_in_modal: true,
     show_in_csv: true
     
-  table_attr :organisations,
+  table_attribute :organisations,
     title: 'Lead organisation',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: true,
     show_in_csv: true
   
-  table_attr :partners,
+  table_attribute :partners,
     title: 'Partners',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
   
-  table_attr :developers,
+  table_attribute :developers,
     title: 'Developers',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
 
-  table_attr :donors,
+  table_attribute :donors,
     title: 'Donors',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
 
-  table_attr :typologies,
+  table_attribute :typologies,
     title: 'Typology',
     filter_on: true,
     legend_on: true,
@@ -84,7 +84,7 @@ class Tool < ApplicationRecord
     show_in_modal: true,
     show_in_csv: true
 
-  table_attr :keywords,
+  table_attribute :keywords,
     title: 'Commodity focus ',
     filter_on: true,
     type: 'multiple',
@@ -92,21 +92,21 @@ class Tool < ApplicationRecord
     show_in_modal: true,
     show_in_csv: true
 
-  table_attr :descriptions,
+  table_attribute :descriptions,
     title: 'Description',
     type: 'single',
     show_in_table: false,
     show_in_modal: true,
     show_in_csv: true
 
-  table_attr :countries,
+  table_attribute :countries,
     title: 'Country',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
   
-  table_attr :spatial_scales,
+  table_attribute :spatial_scales,
     title: 'Scope',
     filter_on: true,
     type: 'multiple',
@@ -114,14 +114,14 @@ class Tool < ApplicationRecord
     show_in_modal: true,
     show_in_csv: true
   
-  table_attr :frequncies,
+  table_attribute :frequncies,
     title: 'Update frequency',
     type: 'single',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: true
   
-  table_attr :users,
+  table_attribute :users,
     title: 'Intended users',
     type: 'multiple',
     filter_on: true, 
@@ -129,14 +129,14 @@ class Tool < ApplicationRecord
     show_in_modal: true,
     show_in_csv: true
   
-  table_attr :contacts,
+  table_attribute :contacts,
     title: 'Country',
     type: 'single',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
   
-  table_attr :tool_id,
+  table_attribute :tool_id,
     title: 'Unique ID',
     type: 'single',
     show_in_table: false,
