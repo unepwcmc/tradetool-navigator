@@ -114,7 +114,7 @@ class Tool < ApplicationRecord
     show_in_modal: true,
     show_in_csv: true
   
-  table_attr :frequncies,
+  table_attr :frequencies,
     title: 'Update frequency',
     type: 'single',
     show_in_table: false,
