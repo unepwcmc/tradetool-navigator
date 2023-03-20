@@ -4,8 +4,8 @@ class PagesController < ApplicationController
       attributes: Tool.columns_to_json,
       endpoint: tools_table_path,
       endpoint_download: '/tools/download',
-      filter_array: Tool.attributes_to_json('filters'),
-      legend_array: Tool.attributes_to_json('legends'),
+      filter_array: Tool.table_filters_with_options.to_json,
+      legend_array: Tool.table_legends_with_options.to_json,
       options: helpers.filterableTableOptions
     }
   end
@@ -16,12 +16,9 @@ class PagesController < ApplicationController
     render json: @tools
   end
 
-  def terms
-  end
+  def terms; end
 
-  def about
-  end
+  def about; end
 
-  def glossary
-  end
+  def glossary; end
 end

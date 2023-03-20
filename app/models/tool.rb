@@ -47,35 +47,35 @@ class Tool < ApplicationRecord
     show_in_modal: true,
     show_in_csv: true
     
-  table_attribute :organisations,
+  table_attribute :'organisations.name',
     title: 'Lead organisation',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: true,
     show_in_csv: true
   
-  table_attribute :partners,
+  table_attribute :'partners.name',
     title: 'Partners',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
   
-  table_attribute :developers,
+  table_attribute :'developers.name',
     title: 'Developers',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
 
-  table_attribute :donors,
+  table_attribute :'donors.name',
     title: 'Donors',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
 
-  table_attribute :typologies,
+  table_attribute :'typologies.name',
     title: 'Typology',
     filter_on: true,
     legend_on: true,
@@ -84,7 +84,7 @@ class Tool < ApplicationRecord
     show_in_modal: true,
     show_in_csv: true
 
-  table_attribute :keywords,
+  table_attribute :'keywords.name',
     title: 'Commodity focus ',
     filter_on: true,
     type: 'multiple',
@@ -99,14 +99,14 @@ class Tool < ApplicationRecord
     show_in_modal: true,
     show_in_csv: true
 
-  table_attribute :countries,
+  table_attribute :'countries.name',
     title: 'Country',
     type: 'multiple',
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
   
-  table_attribute :spatial_scales,
+  table_attribute :'spatial_scales.name',
     title: 'Scope',
     filter_on: true,
     type: 'multiple',
@@ -121,7 +121,7 @@ class Tool < ApplicationRecord
     show_in_modal: false,
     show_in_csv: true
   
-  table_attribute :users,
+  table_attribute :'users.name',
     title: 'Intended users',
     type: 'multiple',
     filter_on: true, 
@@ -142,5 +142,6 @@ class Tool < ApplicationRecord
     show_in_table: false,
     show_in_modal: false,
     show_in_csv: false
-  
+
+  add_form_methods_for_associated_records
 end
