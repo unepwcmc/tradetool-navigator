@@ -144,4 +144,8 @@ class Tool < ApplicationRecord
     show_in_csv: false
 
   add_form_methods_for_associated_records
+
+  def table_show_path
+    nil
+  end
 end
