@@ -4,7 +4,7 @@ set :branch, 'develop'
 server 'web-supported-staging.linode.unep-wcmc.org', user: 'wcmc', roles: %w[app web db]
 
 set :application, 'tradehub-navigator'
-set :server_name, 'tradehub-navigator.web-supported-staging.linode.unep-wcmc.org'
+set :server_name, 'tradetools-navigator.web-supported-staging.linode.unep-wcmc.org'
 set :sudo_user, 'wcmc'
 set :app_port, '80'
 
