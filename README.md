@@ -22,9 +22,9 @@ nvm use 14.7.0
 bundle install
 bundle exec rake db:create
 bundle exec rake db:migrate
-bundle exec rake import:tools['filename.csv'] 
+bundle exec rake import:tools['tools-june-2022-updated.csv'] 
 
-# any new csv file must be stored in /lib/data/seeds 
+# any new csv file must be stored in /lib/data/seeds. Move any old files into the /lib/data/seeds/old_seed_files directory.
 
 bundle exec rails s
 ```
