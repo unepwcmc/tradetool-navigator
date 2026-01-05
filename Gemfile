@@ -43,7 +43,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Filterable Table
 # gem 'wcmc_components', path: '../web-components/wcmc_components' //Uncomment this to use wcmc_components as a yarn linked package
-gem 'wcmc_components', '~> 0.3.0', source: 'https://gem-server.unep-wcmc.org/'
+# Leonardo: Either the gem or version is not exist in server. Freeze them by download them from production server and put in vendor folder.
+# gem 'wcmc_components', '~> 0.3.0', source: 'https://gem-server.unep-wcmc.org/'
+gem 'wcmc_components', path: 'vendor/gems/wcmc_components-0.3.1'
 gem 'will_paginate', '~> 3.0'
 
 group :development, :test do
